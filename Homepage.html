@@ -8,109 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/main.css">
 
     <title> TRIP 04 </title>
 </head>
-
-<style>
-    .logo,
-    .main-body div {
-        background-color: #605DEC;
-
-        background-image: linear-gradient(120deg, #5654d6, #334ff3, #7107f1);
-
-        background-size: 100%;
-        background-repeat: repeat;
-
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-background-clip: text;
-        -moz-text-fill-color: transparent;
-
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: bold;
-        font-size: xx-large;
-    }
-
-    .main-body {
-        margin-top: 6em;
-    }
-
-    .main-body div.slogan {
-        font-size: 50px;
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .menu>a {
-        color: #605DEC;
-        text-decoration: none;
-    }
-
-    form .inner-form {
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    form .inner-form {
-        display: flexbox;
-        justify-content: center;
-    }
-
-    form .inner-form .select-from,
-    form .inner-form .select-to,
-    form .inner-form .select-date {
-        height: 100%;
-        background: #fff;
-        border: 0;
-        display: block;
-        width: 20%;
-        padding: 10px;
-        font-size: 16px;
-        color: #333;
-        border: 1px solid #e5e5e5;
-    }
-
-    form .search-for-trip {
-        background: #605DEC;
-        display: block;
-        padding: 10px;
-        font-size: 16px;
-        width: 10%;
-        color: white
-    }
-
-
-    .navbar-nav {
-      flex-direction: row;
-    }
-
-    .navbar-nav .active{
-        color: #605DEC;
-    }
-    
-    .nav-link {
-      padding-right: .5rem !important;
-      padding-left: .5rem !important;
-    }
-
-    .sign-up {
-        background-color: #605DEC;
-    }
-
-    footer > div > a, p{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    #nav ul li a.active-page{
-        color: #605DEC;
-    }
-</style>
 
 <script>
     $(function () {
@@ -162,7 +63,7 @@
         </div>
         <form action="/action_page.php" style="margin-top: 4em;">
             <div class="inner-form">
-                <select class="select-from">
+                <select class="select-from form-control selectpicker">
                     <option selected disabled placeholder="Điểm đi ">Điểm đi</option>
                     <option value="Sài gòn">Sài gòn</option>
                     <option value="Đà Lạt ">Đà Lạt</option>
@@ -173,7 +74,7 @@
                     <option value="Buôn Mê Thuột">Buôn Mê Thuột</option>
                 </select>
 
-                <select class="select-to">
+                <select class="select-to form-control selectpicker">
                     <option selected disabled>Điểm đến</option>
                     <option value="Sài gòn">Sài gòn</option>
                     <option value="Đà Lạt ">Đà Lạt</option>
@@ -185,7 +86,7 @@
                 </select>
                 <input type="date" class="select-date" min: />
 
-                <button type="button" class="btn btn-primary search-for-trip">Find</button>
+                <button type="button" class="btn btn-primary search-for-trip">Tìm kiếm</button>
             </div>
 
         </form>
@@ -195,8 +96,7 @@
     <br>
 
 
-    <footer class="fixed-bottom">
-        <hr />
+    <footer class="card-footer fixed-bottom">
         <div class="row align-items-start">
             <div class="logo col align-content-center">
                 <a href="./Homepage.html">
@@ -215,6 +115,9 @@
                 <p>7:00 - 21:00, Thứ 2 - Chủ Nhật</p>
             </div>
         </div>
+        <hr/>
+        <p>© 2022 | Bản quyền thuộc về công ty Trip04</p>
+
     </footer>
 </body>
 
