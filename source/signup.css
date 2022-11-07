@@ -12,6 +12,7 @@
 }
 
 .card-4 {
+    margin-top: 180px;
     background: #fff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -89,4 +90,19 @@
 .card-body h6 {
     text-align: center;
 }
-  
+
+footer {
+    position: relative;
+    margin-top: 180px;
+    clear: both;
+  }
+
+.logo {
+    padding: 20px;
+    padding-right: 0px;
+    margin-left: 100px;
+}
+
+.information {
+    font-weight: bold;
+}
