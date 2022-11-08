@@ -1,0 +1,114 @@
+.card-body {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+}
+
+.card {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+    width: fit-content;
+}
+
+.card-4 {
+    margin-top: 180px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 400px) {
+    .card-4 .card-body {
+        padding: 50px 40px;
+    }
+}
+
+.card{
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+}
+
+.wrapper--w680 {
+    max-width: 620px;
+}
+
+.input-style {
+    line-height: 30px;
+    background: #fafafa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #666;
+    margin: 5px;
+    width: 450px;
+    border-width: thin;
+    border-collapse: separate; 
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.btn-style {
+    border-width: 0ch;
+    margin-left: 67%;
+}
+
+
+.row-space {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  
+}
+
+
+.pass{
+    border-color: #605DEC;
+}
+
+.wrapper-sign-up{
+    display: flex;
+    width: 500px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.signup-button{
+    width: 450px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.card-body h6 {
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    margin-top: 180px;
+    clear: both;
+  }
+
+.logo {
+    padding: 20px;
+    padding-right: 0px;
+    margin-left: 100px;
+}
+
+.information {
+    font-weight: bold;
+}
