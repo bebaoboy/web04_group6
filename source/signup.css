@@ -31,6 +31,7 @@
 .card{
     height: fit-content;
     width: fit-content;
+    padding: 20px;
 }
 
 .wrapper--w680 {
@@ -51,6 +52,11 @@
     border-collapse: separate; 
     border-bottom-right-radius:10px;
     border-top-right-radius:10px;
+}
+
+.btn-style {
+    border-width: 0ch;
+    margin-left: 67%;
 }
 
 

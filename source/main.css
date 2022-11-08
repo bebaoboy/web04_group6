@@ -104,3 +104,29 @@
     #nav ul li a.active-page{
         color: #605DEC;
     }
+
+    .btn-primary-2 {
+        color: #fff;
+        background-color: #605DEC;
+        border-color: #605DEC;
+    }
+
+    .btn-2 {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #605DEC;
+        border-color: #605DEC;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+    }
