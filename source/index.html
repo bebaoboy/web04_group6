@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .checked {
+        color: orange;
+      }
+      </style>
+    <title> TRIP 04 </title>
+</head>
+
+<script>
+    $(function () {
+        var dtToday = new Date();
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate();
+        var year = dtToday.getFullYear();
+        if (month < 10)
+            month = '0' + month.toString();
+        if (day < 10)
+            day = '0' + day.toString();
+        var maxDate = year + '-' + month + '-' + day;
+        alert(maxDate);
+        $('#txtDate').attr('min', maxDate);
+    });
+</script>
+
+<body>
+    <header class="container-fluid" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logo navbar-brand" href="./Homepage.html">Trip04</a>    
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active-page" aria-current="page"
+                    href="./Homepage.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Về Chúng Tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Signin.html">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary sign-up">Đăng ký</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/action_page.php" style="margin-top: 4em;">
+            <div class="inner-form">
+                <select class="select-from form-control selectpicker">
+                    <option selected disabled placeholder="Điểm đi ">Điểm đi</option>
+                    <option value="Sài gòn">Sài gòn</option>
+                    <option value="Đà Lạt ">Đà Lạt</option>
+                    <option value="Nha Trang">Nha Trang </option>
+                    <option value="Đà nẵng">Đà Nẵng</option>
+                    <option value="Vũng Tàu">Vũng Tàu </option>
+                    <option value="Long An">Long An</option>
+                    <option value="Buôn Mê Thuột">Buôn Mê Thuột</option>
+                </select>
+
+                <select class="select-to form-control selectpicker">
+                    <option selected disabled>Điểm đến</option>
+                    <option value="Sài gòn">Sài gòn</option>
+                    <option value="Đà Lạt ">Đà Lạt</option>
+                    <option value="Nha Trang">Nha Trang </option>
+                    <option value="Đà nẵng">Đà Nẵng</option>
+                    <option value="Vũng Tàu">Vũng Tàu </option>
+                    <option value="Long An">Long An</option>
+                    <option value="Buôn Mê Thuột">Buôn Mê Thuột</option>
+                </select>
+                <input type="date" class="select-date" min: />
+
+                <button type="button" class="btn btn-primary search-for-trip">Tìm kiếm</button>
+            </div>
+
+        </form>
+        <form action="/action_page.php">
+          <div class="sort-vexe">
+            <p>Hãy chọn chuyến xe </p>
+            <select class="select-from form-control selectpicker">
+              <option selected disabled placeholder="Giá vé">Giá Vé</option>
+              <option value="150.000 VNĐ">150.000 VNĐ</option>
+              <option value="160.000 VNĐ ">160.000 VNĐ</option>
+              <option value="170.000 VNĐ">170.000 VNĐ </option>
+              <option value="180.000 VNĐ">180.000 VNĐ</option>
+              <option value="190.000 VNĐ">190.000 VNĐ </option>
+              <option value="200.000 VNĐ">200.000 VNĐ</option>
+              <option value="210.000 VNĐ">210.000 VNĐ</option>
+              <option value="250.000 VNĐ">250.000 VNĐ</option>
+              <option value="360.000 VNĐ">360.000 VNĐ</option>
+              <option value="470.000 VNĐ">470.000 VNĐ</option>
+
+          </select>
+          <select class="select-to form-control selectpicker">
+            <option selected disabled placeholder="Nhà xe">Nhà xe</option>
+            <option value="Hoa Mai ">Hoa Mai</option>
+            <option value="Toàn Thắng">Toàn Thắng</option>
+            <option value="Thành Bưởi">Thành Bưởi </option>
+            <option value="Cúc Tùng ">Cúc Tùng</option>
+            <option value="Phương Trang">Phương Trang </option>
+            <option value="Hoàng Minh">Hoàng Minh</option>
+            <option value="Xuân Hương">Xuân Hương</option>
+        </select>
+        <select class="select-to form-control selectpicker">
+          <option selected disabled placeholder="Loại Xe">Loại xe</option>
+          <option value="Xe Thường ">Xe Thường </option>
+          <option value="Xe limousine">Xe limousine</option>
+        </select>
+        <select class="select-to form-control selectpicker">
+        <option selected disabled placeholder="Loại Ghế">Loại Ghế</option>
+        <option value="Ghế ngồi ">Ghế ngồi </option>
+        <option value="Giường nằm">Giường nằm</option>
+        </select>
+      <select class="select-to form-control selectpicker">
+      <option selected disabled placeholder="Thời gian">Thời gian</option>
+      <option value="Sáng sớm ">Sáng sớm    (00:00-06:00) </option>
+      <option value="Buổi sáng">Buổi sáng   (6:00-12:00) </option>
+      <option value="Buổi chiều">Buổi chiều (12:00-18:00)</option>
+      <option value="Buổi tối">Buổi tối (18:00-23:59)</option> 
+      </select>
+    </div>
+    </form>
+    <div class="select-limousine">
+      <p><time>19:00</time> -> <time>22:00</time> <b>Hoa Mai</b> <button type="button">028 388 1234 </button> <button type="button">
+    
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span></button> 
+      </p>
+    <div class="image-limousine">
+      <img width="100" height ="100" src="https://megabus.vn/wp-content/uploads/2020/05/Review-chat-luong-nha-xe-Nam-Thang-Limousine-tu-Ha-Noi-di-Sapa-megabus-11.jpg" alt="limousine"/>
+      </div>
+      <div class ="car-information">
+        <p>180.000 đ</p>
+        <ul>  
+          <li>limousine</li>
+          <li>còn number chỗ </li>
+        </ul>
+      </div>
+      <div class="from-to">
+        <svg class="TicketPC__LocationRouteSVG-sc-1mxgwjh-4 eKNjJr" xmlns="http://www.w3.org/2000/svg" width="14" height="74" viewBox="0 0 14 74">
+          <path fill="none" stroke="#787878" stroke-linecap="round" stroke-width="2" stroke-dasharray="0 7" d="M7 13.5v46"></path>
+          <g fill="none" stroke="#484848" stroke-width="3"><circle cx="7" cy="7" r="7" stroke="none"></circle>
+          <circle cx="7" cy="7" r="5.5"></circle></g>
+          <path d="M7 58a5.953 5.953 0 0 0-6 5.891 5.657 5.657 0 0 0 .525 2.4 37.124 37.124 0 0 0 5.222 7.591.338.338 0 0 0 .506 0 37.142 37.142 0 0 0 5.222-7.582A5.655 5.655 0 0 0 13 63.9 5.953 5.953 0 0 0 7 58zm0 8.95a3.092 3.092 0 0 1-3.117-3.06 3.117 3.117 0 0 1 6.234 0A3.092 3.092 0 0 1 7 66.95z" fill="#787878">
+          </path>
+        </svg>
+          <div class="from-to-content">
+            <div class="content from">
+              <div class="hour">19:00</div>
+              <div class="place">• Bến Xe Miền Đông (Khu công nghiệp, Cần Giuộc, Long An) 
+              </div>
+            </div>
+            <div class="duration">3h</div>
+            <div class="content to">
+              <div class="hour">22:00</div>
+            <div class="place">• Bến xe Khách Vũng Tàu</div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="action">
+    <button type="button" class="ant-btn btn-detail ant-btn-link">
+      <span>Thông tin chi tiết</span>
+      <i aria-label="icon: caret-down" class="anticon anticon-caret-down">
+        <svg viewBox="0 0 1024 1024" class="" data-icon="caret-down" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+          </path>
+        </svg>
+      </i>
+    </button>
+          <input data-tracking-event="selected_route" type="checkbox" class="ant-btn btn-booking ">
+            <span>Chọn chuyến</span>
+          </div>
+        
+   
+  
+  <div class="DetailInfo__DetailContainer-sc-2a71o4-2 jZzwji container__detail-info" data-trip-code="v2CKv4CRCo-AkaAjE0IgI1MDCVq6QEOgoxMC0xMS0yMDIySBhQG3gBqAH8hAE">
+    <div class="ant-tabs ant-tabs-top DetailInfo__TabsStyled-sc-2a71o4-0 dRoExm ant-tabs-line">
+      <div role="tablist" class="ant-tabs-bar ant-tabs-top-bar" tabindex="0">
+        <div class="ant-tabs-nav-container">
+          <span unselectable="unselectable" class="ant-tabs-tab-prev ant-tabs-tab-btn-disabled">
+            <span class="ant-tabs-tab-prev-icon">
+              <i aria-label="icon: left" class="anticon anticon-left ant-tabs-tab-prev-icon-target"><svg viewBox="64 64 896 896" class="" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z">
+              </path>
+            </svg>
+          </i>
+        </span>
+      </span>
+      <span unselectable="unselectable" class="ant-tabs-tab-next ant-tabs-tab-btn-disabled">
+        <span class="ant-tabs-tab-next-icon"><i aria-label="icon: right" class="anticon anticon-right ant-tabs-tab-next-icon-target">
+          <svg viewBox="64 64 896 896" class="" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z">
+            </path>
+          </svg>
+        </i>
+      </span>
+    </span>
+    <div class="ant-tabs-nav-wrap">
+      <div class="ant-tabs-nav-scroll">
+        <div class="ant-tabs-nav ant-tabs-nav-animated">
+              <div>
+                <div role="tab" aria-disabled="false" aria-selected="true" class="ant-tabs-tab-active ant-tabs-tab detail-info-tab-bar" id="IMAGES" data-tracking-event="detail-info">Hình ảnh</div>
+                <div role="tab" aria-disabled="false" aria-selected="false" class=" ant-tabs-tab detail-info-tab-bar" id="POLICY" data-tracking-event="detail-info">Chính sách</div>
+                <div role="tab" aria-disabled="false" aria-selected="false" class=" ant-tabs-tab detail-info-tab-bar" id="REVIEW" data-tracking-event="detail-info">Đánh giá</div>
+              </div>
+              <div class="ant-tabs-ink-bar ant-tabs-ink-bar-animated" style="display: block; transform: translate3d(0px, 0px, 0px); width: 98px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="0" role="presentation" style="width: 0px; height: 0px; overflow: hidden; position: absolute;"></div>
+    <div class="ant-tabs-content ant-tabs-content-animated ant-tabs-top-content" style="margin-left: 0%;">
+      <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane ant-tabs-tabpane-active" id="IMAGES">
+        <div tabindex="0" role="presentation" style="width: 0px; height: 0px; overflow: hidden; position: absolute;"></div>
+        <div class="ant-carousel"><div class="slick-slider Images__SliderStyled-sc-19udwkm-3 ejXkbd slick-initialized" dir="ltr">
+          <button type="button" data-role="none" class="slick-arrow slick-prev slick-disabled" style="display: block;"> Previous</button>
+          <div class="slick-list"><div class="slick-track" style="width: 5121px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 569px;">
+              <div>
+                <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                  <img src="////////static.vexere.com/production/images/1640253288558.jpeg" alt="////////static.vexere.com/production/images/1640253288558.jpeg" caption="////////static.vexere.com/production/images/1640253288558.jpeg"></div>
+                </div>
+              </div>
+              <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="//static.vexere.com/production/images/1640253289592.jpeg" alt="//static.vexere.com/production/images/1640253289592.jpeg" caption="//static.vexere.com/production/images/1640253289592.jpeg">
+                  </div>
+                </div>
+              </div>
+              <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="//static.vexere.com/production/images/1640253290766.jpeg" alt="//static.vexere.com/production/images/1640253290766.jpeg" caption="//static.vexere.com/production/images/1640253290766.jpeg">
+                  </div>
+                </div>
+              </div>
+              <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="////static.vexere.com/production/images/1640253291591.jpeg" alt="////static.vexere.com/production/images/1640253291591.jpeg" caption="////static.vexere.com/production/images/1640253291591.jpeg">
+                  </div>
+                </div>
+              </div>
+              <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="//////static.vexere.com/production/images/1640253345474.jpeg" alt="//////static.vexere.com/production/images/1640253345474.jpeg" caption="//////static.vexere.com/production/images/1640253345474.jpeg">
+                  </div>
+                </div>
+              </div>
+              <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="//static.vexere.com/production/images/1641284519896.jpeg" alt="//static.vexere.com/production/images/1641284519896.jpeg" caption="//static.vexere.com/production/images/1641284519896.jpeg">
+                  </div>
+                </div>
+              </div>
+              <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="//static.vexere.com/production/images/1641284521426.jpeg" alt="//static.vexere.com/production/images/1641284521426.jpeg" caption="//static.vexere.com/production/images/1641284521426.jpeg">
+                  </div>
+                </div>
+              </div>
+              <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="////static.vexere.com/production/images/1642404015167.jpeg" alt="////static.vexere.com/production/images/1642404015167.jpeg" caption="////static.vexere.com/production/images/1642404015167.jpeg">
+                  </div>
+                </div>
+              </div>
+              <div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 569px;">
+                <div>
+                  <div tabindex="-1" class="Images__SlideContainer-sc-19udwkm-0 gIRus" style="width: 100%; display: inline-block;">
+                    <img src="////static.vexere.com/production/images/1660559532850.jpeg" alt="////static.vexere.com/production/images/1660559532850.jpeg" caption="////static.vexere.com/production/images/1660559532850.jpeg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" data-role="none" class="slick-arrow slick-next" style="display: block;"> Next</button>
+        </div>
+      </div>
+      <div class="Images__ImageInfo-sc-19udwkm-4 dmPUEx">
+        <div>
+
+        </div>
+        <div>1/9</div>
+      </div>
+      <div class="ant-carousel">
+        <div class="slick-slider Images__ThumbnailsContainer-sc-19udwkm-2 hIQcEa slick-initialized" dir="ltr">
+          <div class="slick-list"><div class="slick-track" style="width: 1026px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 114px;">
+              <div>
+                <div class="img-container image current" tabindex="-1" style="width: 100%; display: inline-block;">
+                  <img src="////////static.vexere.com/production/images/1640253288558.jpeg" caption="////////static.vexere.com/production/images/1640253288558.jpeg">
+                </div>
+              </div>
+            </div>
+            <div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 114px;">
+              <div>
+                <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                  <img src="//static.vexere.com/production/images/1640253289592.jpeg" caption="//static.vexere.com/production/images/1640253289592.jpeg">
+                </div>
+              </div>
+            </div>
+            <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 114px;">
+              <div>
+                <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                  <img src="//static.vexere.com/production/images/1640253290766.jpeg" caption="//static.vexere.com/production/images/1640253290766.jpeg">
+                </div>
+              </div>
+            </div>
+            <div data-index="3" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 114px;">
+              <div>
+                <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                  <img src="////static.vexere.com/production/images/1640253291591.jpeg" caption="////static.vexere.com/production/images/1640253291591.jpeg">
+                </div>
+              </div>
+            </div>
+            <div data-index="4" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 114px;">
+              <div>
+                <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                  <img src="//////static.vexere.com/production/images/1640253345474.jpeg" caption="//////static.vexere.com/production/images/1640253345474.jpeg">
+                </div>
+              </div>
+            </div>
+            <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 114px;">
+              <div>
+                <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                <img src="//static.vexere.com/production/images/1641284519896.jpeg" caption="//static.vexere.com/production/images/1641284519896.jpeg">
+              </div>
+            </div>
+          </div>
+          <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 114px;">
+            <div>
+              <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                <img src="//static.vexere.com/production/images/1641284521426.jpeg" caption="//static.vexere.com/production/images/1641284521426.jpeg">
+              </div>
+            </div>
+          </div>
+          <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 114px;">
+            <div>
+              <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                <img src="////static.vexere.com/production/images/1642404015167.jpeg" caption="////static.vexere.com/production/images/1642404015167.jpeg">
+              </div>
+            </div>
+          </div>
+          <div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 114px;">
+            <div>
+              <div class="img-container image " tabindex="-1" style="width: 100%; display: inline-block;">
+                <img src="////static.vexere.com/production/images/1660559532850.jpeg" caption="////static.vexere.com/production/images/1660559532850.jpeg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div tabindex="0" role="presentation" style="width: 0px; height: 0px; overflow: hidden; position: absolute;">
+  </div>
+</div>
+<div role="tabpanel" aria-hidden="true" class="ant-tabs-tabpane ant-tabs-tabpane-inactive" id="FACILITY">
+  <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane ant-tabs-tabpane-active" id="POLICY">
+    <div tabindex="0" role="presentation" style="width: 0px; height: 0px; overflow: hidden; position: absolute;"></div>
+    <div class="CancellationPolicy-sc-17t185j-1 brYMry cancellation-policy-container undefined">
+      <p class="title">Chính sách hủy vé</p>
+      <div class="CancellationPolicy__TimelineContainer-sc-17t185j-0 gQBVWJ"><div class="cancellation-timeline">
+        <div class="cancellation-policy-period">
+          <div style="background: rgb(255, 199, 0);"></div>
+          <p>Không mất phí</p>
+        </div>
+        <div class="mark" style="left: calc(50% - 33px);">
+          <strong>12:50</strong>
+          <span>10/11/2022</span>
+        </div>
+        <div class="cancellation-policy-period">
+          <div style="background: rgb(241, 0, 0);"></div>
+        <p>Phí hủy 100%</p>
+      </div>
+    </div>
+    <div class="departure">Khởi hành</div>
+    <div class="circle"></div>
+    <div class="circle today"></div>
+  </div>
+  <div class="note">
+    <strong>Ghi Chú : </strong>Phí huỷ sẽ được tính trên giá gốc, không giảm trừ khuyến mãi hoặc giảm giá; đồng thời không vượt quá số tiền quý khách đã thanh toán. 
+  </div>
+  <div class="CompanyPolicy__Container-sc-1sk7fre-0 chenvc company-policy-container undefined">
+    <div class="policy-group-container">
+      <p class="base__SubHeadline-sc-1tvbuqk-9 gMAJfk policy-group-title">Yêu cầu khi lên xe</p>
+      <ul>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Có mặt tại văn phòng/quầy vé/bến xe trước 30 phút để làm thủ tục lên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Đổi vé giấy trước khi lên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Xuất trình SMS/Email đặt vé trước khi lên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Không mang đồ ăn, thức ăn có mùi lên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Không hút thuốc, uống rượu, sử dụng chất kích thích trên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Không mang các vật dễ cháy nổ lên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Không vứt rác trên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Không làm ồn, gây mất trật tự trên xe</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Không mang giày, dép trên xe </p></li>
+      </ul>
+    </div>
+    <div class="policy-group-container">
+      <p class="base__SubHeadline-sc-1tvbuqk-9 gMAJfk policy-group-title">Hành lý xách tay</p>
+      <ul>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Tổng trọn lượng hành lý không vượt quá 20 Kg</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Không vận chuyển hành hóa cồng kềnh</p></li>
+      </ul>
+    </div>
+    <div class="policy-group-container">
+      <p class="base__SubHeadline-sc-1tvbuqk-9 gMAJfk policy-group-title">Trẻ em và phụ nữ có thai</p>
+        <ul>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Trẻ em dưới 7 tuổi hoặc dưới 130 cm được miễn phí vé nếu ngồi cùng ghế/giường với bố mẹ</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Phụ nữ mang thai cần đảm bảo sức khỏe trong suốt quá trình di chuyển</p></li>
+        <li><p class="base__Body01-sc-1tvbuqk-15 jtPVqG policy-option">Nhà xe có quyền từ chối phục vụ nếu hành khách không tuân thủ quy định về trẻ em và phụ nữ có thai</p></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div role="tabpanel" aria-hidden="false" class="ant-tabs-tabpane ant-tabs-tabpane-active" id="REVIEW">
+    <div tabindex="0" role="presentation" style="width: 0px; height: 0px; overflow: hidden; position: absolute;"></div>
+    <div class="Reviews__Container-sc-1uhksgp-0 eAjcOt"><div class="rating"><div class="overall-rating">
+      <i aria-label="icon: star" class="anticon anticon-star">
+        <svg viewBox="64 64 896 896" class="" data-icon="star" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+          </path>
+        </svg>
+      </i>
+      <span>4.7</span>
+    </div>
+    <div class="Rate__StarYellowContainer-sc-1kj5nbr-2 hMJCFM" style="width: 90%;">
+      <div style="width: 125px;">
+        <img src="https://storage.googleapis.com/vxrd/star_yellow.svg" alt="yellow-icon" class="Rate__Star-sc-1kj5nbr-0 dnhtJh" style="width: 20px; height: 20px;">
+        <img src="https://storage.googleapis.com/vxrd/star_yellow.svg" alt="yellow-icon" class="Rate__Star-sc-1kj5nbr-0 dnhtJh" style="width: 20px; height: 20px;">
+        <img src="https://storage.googleapis.com/vxrd/star_yellow.svg" alt="yellow-icon" class="Rate__Star-sc-1kj5nbr-0 dnhtJh" style="width: 20px; height: 20px;">
+        <img src="https://storage.googleapis.com/vxrd/star_yellow.svg" alt="yellow-icon" class="Rate__Star-sc-1kj5nbr-0 dnhtJh" style="width: 20px; height: 20px;">
+        <img src="https://storage.googleapis.com/vxrd/star_yellow.svg" alt="yellow-icon" class="Rate__Star-sc-1kj5nbr-0 dnhtJh" style="width: 20px; height: 20px;">
+      </div> 
+    </div>
+    <span>• 1035 đánh giá</span>
+  </div>
+<div class="items">
+    <div class="ReviewItem__Container-sc-1ty2ehf-0 ixChPW review-item-container ">
+      <div class="review-item">
+        <div class="review-section header"><img class="review-avatar lazyloaded" data-src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" alt="review-avatar" width="40" height="40">
+          <div class="review-title"><p class="base__Body01-sc-1tvbuqk-15 jtPVqG name color--darkness">Phạm Minh Đức</p>
+            <div class="RatingStars__Container-kftqmu-0 jTwPyK rating-stars-container ">
+              <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--critical">star_rate</i></div>
+              <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--critical">star_rate</i></div>
+              <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+              <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+              <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+            </div>
+          </div>
+        </div>
+        <div class="review-section body"><p class="base__Body02-sc-1tvbuqk-17 iyYcnT comment color--dark">Lần này đi rất tệ</p></div>
+        <div class="review-section footer"><p class="base__Caption-sc-1tvbuqk-20 kQafsX rated-date color--light-disable">Đăng ngày 06/11/2022</p>
+          <div class="material-icons-wrapper md-16 verified-icon "><i class="material-icons-round color--positive">verified</i></div>
+          <p class="base__Caption-sc-1tvbuqk-20 kQafsX verified-statement color--positive">Đã mua vé</p>
+        </div>
+      </div>
+    </div>
+    <div class="ReviewItem__Container-sc-1ty2ehf-0 ixChPW review-item-container ">
+      <div class="review-item">
+        <div class="review-section header"><img class="review-avatar lazyloaded" data-src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" alt="review-avatar" width="40" height="40">
+            <div class="review-title"><p class="base__Body01-sc-1tvbuqk-15 jtPVqG name color--darkness">Hà Nam Ninh</p>
+              <div class="RatingStars__Container-kftqmu-0 jTwPyK rating-stars-container ">
+                <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--critical">star_rate</i></div>
+                <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--critical">star_rate</i></div>
+                <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--critical">star_rate</i></div>
+                <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--critical">star_rate</i></div>
+                <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--critical">star_rate</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="review-section body"><p class="base__Body02-sc-1tvbuqk-17 iyYcnT comment color--dark">Ok lắm</p> </div>
+          <div class="review-section footer"><p class="base__Caption-sc-1tvbuqk-20 kQafsX rated-date color--light-disable">Đăng ngày 06/11/2022</p>
+            <div class="material-icons-wrapper md-16 verified-icon "><i class="material-icons-round color--positive">verified</i></div>
+            <p class="base__Caption-sc-1tvbuqk-20 kQafsX verified-statement color--positive">Đã mua vé</p>
+          </div>
+        </div>
+    </div>
+              <div class="ReviewItem__Container-sc-1ty2ehf-0 ixChPW review-item-container ">
+                <div class="review-item"><div class="review-section header">
+                  <img class="review-avatar lazyloaded" data-src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" alt="review-avatar" width="40" height="40">
+                  <div class="review-title"><p class="base__Body01-sc-1tvbuqk-15 jtPVqG name color--darkness">Nguyen Duc Thinh</p>
+                    <div class="RatingStars__Container-kftqmu-0 jTwPyK rating-stars-container ">
+                      <div class="material-icons-wrapper md-16 rate-icon ">
+                        <i class="material-icons-round color--critical">star_rate</i>
+                      </div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-section body"><p class="base__Body02-sc-1tvbuqk-17 iyYcnT comment color--dark">Rất tệ</p></div>
+                <div class="review-section footer"><p class="base__Caption-sc-1tvbuqk-20 kQafsX rated-date color--light-disable">Đăng ngày 05/11/2022</p>
+                  <div class="material-icons-wrapper md-16 verified-icon "><i class="material-icons-round color--positive">verified</i></div>
+                  <p class="base__Caption-sc-1tvbuqk-20 kQafsX verified-statement color--positive">Đã mua vé</p>
+                </div>
+              </div>
+            </div>
+            <div class="ReviewItem__Container-sc-1ty2ehf-0 ixChPW review-item-container ">
+              <div class="review-item">
+                <div class="review-section header">
+                  <img class="review-avatar lazyloaded" data-src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" alt="review-avatar" width="40" height="40">
+                  <div class="review-title"><p class="base__Body01-sc-1tvbuqk-15 jtPVqG name color--darkness">KWONYONGDAE</p>
+                    <div class="RatingStars__Container-kftqmu-0 jTwPyK rating-stars-container ">
+                      <div class="material-icons-wrapper md-16 rate-icon ">
+                        <i class="material-icons-round color--critical">star_rate</i>
+                      </div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i>
+                      </div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+                      <div class="material-icons-wrapper md-16 rate-icon "><i class="material-icons-round color--light-disable">star_rate</i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-section body"><p class="base__Body02-sc-1tvbuqk-17 iyYcnT comment color--dark">It's not a reserved bus, but a big bus has arrived and it's not going to the destination. </p></div>
+                <div class="review-section footer"><p class="base__Caption-sc-1tvbuqk-20 kQafsX rated-date color--light-disable">Đăng ngày 01/11/2022</p>
+                  <div class="material-icons-wrapper md-16 verified-icon "><i class="material-icons-round color--positive">verified</i></div>
+                  <p class="base__Caption-sc-1tvbuqk-20 kQafsX verified-statement color--positive">Đã mua vé</p>
+                </div>
+              </div>
+            </div>
+            <div class="ReviewItem__Container-sc-1ty2ehf-0 ixChPW review-item-container ">
+              <div class="review-item"><div class="review-section header">
+                <img class="review-avatar lazyloaded" data-src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg" alt="review-avatar" width="40" height="40">
+                <div class="review-title"><p class="base__Body01-sc-1tvbuqk-15 jtPVqG name color--darkness">Nguyễn Minh Hiếu</p>
+                  <div class="RatingStars__Container-kftqmu-0 jTwPyK rating-stars-container ">
+                    <div class="material-icons-wrapper md-16 rate-icon ">
+                      <i class="material-icons-round color--critical">star_rate</i>
+                    </div>
+                  <div class="material-icons-wrapper md-16 rate-icon ">
+                      <i class="material-icons-round color--critical">star_rate</i>
+                    </div>
+                  <div class="material-icons-wrapper md-16 rate-icon ">
+                    <i class="material-icons-round color--critical">star_rate</i>
+                  </div>
+                  <div class="material-icons-wrapper md-16 rate-icon ">
+                    <i class="material-icons-round color--critical">star_rate</i>
+                  </div>
+                  <div class="material-icons-wrapper md-16 rate-icon ">
+                    <i class="material-icons-round color--light-disable">star_rate</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review-section body">
+              <p class="base__Body02-sc-1tvbuqk-17 iyYcnT comment color--dark">Xóc =)))</p>
+            </div>
+            <div class="review-section footer">
+              <p class="base__Caption-sc-1tvbuqk-20 kQafsX rated-date color--light-disable">Đăng ngày 23/10/2022</p>
+              <div class="material-icons-wrapper md-16 verified-icon ">
+                <i class="material-icons-round color--positive">verified</i>
+              </div>
+              <p class="base__Caption-sc-1tvbuqk-20 kQafsX verified-statement color--positive">Đã mua vé</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="https://storage.googleapis.com/vxrd/iconCloseInfo.svg" class="DetailInfo__IconClose-sc-2a71o4-1 gZVged">
+    </div> 
+  </div>
+</div>
+</main>
+ 
+<br>
+<br>
+<br>
+<footer class="card-footer fixed-bottom">
+    <div class="row align-items-start">
+        <div class="logo col align-content-center">
+            <a href="./Homepage.html">
+                <h1>TRIP04</h1>
+            </a>
+        </div>
+        <div class="information col">
+            <p>Về chúng tôi</p>
+            <p>Công ty TNHH Thương mai Dịch vụ Trip4</p>
+            <p>Địa chỉ: Số 1 Nguyễn Văn Cừ, Phường 3,</p>
+            <p>Quận 5, Thành Phố Hồ Chí Minh</p>
+        </div>
+        <div class="contact col">
+            <p>Liên Hệ </p>
+            <p>Hotline: 1900 123456</p>
+            <p>7:00 - 21:00, Thứ 2 - Chủ Nhật</p>
+        </div>
+    </div>
+    <hr/>
+    <p>© 2022 | Bản quyền thuộc về công ty Trip04</p>
+</footer>
+</body>
+
+</html>
+ <!-- mai làm chỉnh thanh footer và cái thanh kéo , chỉnh lại các file hình ảnh, các đường link dẫn tới các file --> 
