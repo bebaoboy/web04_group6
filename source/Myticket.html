@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title> TRIP 04 </title>
+</head>
+
+<script>
+    $(function () {
+        var dtToday = new Date();
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate();
+        var year = dtToday.getFullYear();
+        if (month < 10)
+            month = '0' + month.toString();
+        if (day < 10)
+            day = '0' + day.toString();
+        var maxDate = year + '-' + month + '-' + day;
+        alert(maxDate);
+        $('#txtDate').attr('min', maxDate);
+    });
+</script>
+
+<body>
+    <header class="container-fluid" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logo navbar-brand" href="./Homepage.html">Trip04</a>    
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active-page" aria-current="page"
+                    href="./Homepage.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Về Chúng Tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Signin.html">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary sign-up">Đăng ký</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Info">
+            <div class="Account">
+                <a class="nav-link" href="#">Thông tin tài khoản</a>
+            </div>
+            <div class="Tickets">
+                <a class="nav-link" href="#"> Vé của tôi</a>
+            </div>
+            <div class="Password">
+                <a class="nav-link" href="#">Đổi mật khẩu</a>
+            </div>
+            <div class="Logout">
+                <a class="nav-link" href="#">Đăng xuất<a>
+            </div>
+        </div>
+        <div class="tickets">
+            <div class="Current">
+                <a class="nav-link" href="#">Hiện tại</a>
+            </div>
+            <div class="Past">
+                <a class="nav-link" href="#"> Đã đi </a>
+            </div>
+            <div class="Cancel">
+                <a class="nav-link" href="#">Đã hủy</a>
+            </div>
+        </div>
+        <div class="notbookedyet">
+            <p>Bạn chưa có chuyến sắp đi nào.</p>
+            <button type="button">Đặt vé ngay </button>
+        </div>
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <footer class="card-footer fixed-bottom">
+        <div class="row align-items-start">
+            <div class="logo col align-content-center">
+                <a href="./Homepage.html">
+                    <h1>TRIP04</h1>
+                </a>
+            </div>
+            <div class="information col">
+                <p>Về chúng tôi</p>
+                <p>Công ty TNHH Thương mai Dịch vụ Trip4</p>
+                <p>Địa chỉ: Số 1 Nguyễn Văn Cừ, Phường 3,</p>
+                <p>Quận 5, Thành Phố Hồ Chí Minh</p>
+            </div>
+            <div class="contact col">
+                <p>Liên Hệ </p>
+                <p>Hotline: 1900 123456</p>
+                <p>7:00 - 21:00, Thứ 2 - Chủ Nhật</p>
+            </div>
+        </div>
+        <hr/>
+        <p>© 2022 | Bản quyền thuộc về công ty Trip04</p>
+    </footer>
+</body>
+
+</html>
