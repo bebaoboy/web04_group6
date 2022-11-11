@@ -1,0 +1,341 @@
+.logo,
+    .main-body div {
+        background-color: #605DEC;
+
+        background-image: linear-gradient(120deg, #5654d6, #334ff3, #7107f1);
+
+        background-size: 100%;
+        background-repeat: repeat;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-large;
+    }
+
+    .logo{
+        font-size: 60px;
+        font-weight: bolder;
+        background-image: linear-gradient(720deg, #5654d6, #334ff3, #7107f1);
+
+        background-size: 100%;
+        background-repeat: repeat;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .header-logo{
+        font-size: 60px;
+        font-weight: bolder;
+        background-image: linear-gradient(720deg, #5654d6, #334ff3, #7107f1);
+
+        background-size: 100%;
+        background-repeat: repeat;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .main-body {
+        margin-top: 6em;
+    }
+
+    .main-body div.slogan {
+        font-size: 80px;
+        font-weight: bolder;
+        text-align: center;
+        background-color: #605DEC;
+
+        background-image: linear-gradient(720deg, #5654d6, #334ff3, #7107f1);
+
+        background-size: 100%;
+        background-repeat: repeat;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .menu > a {
+        color: #605DEC;
+        text-decoration: none;
+    }
+
+    form .inner-form {
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    form .inner-form {
+        display: flexbox;
+        justify-content: center;
+    }
+
+    form .inner-form .select-from,
+    form .inner-form .select-to,
+    form .inner-form .select-date {
+        height: 100%;
+        background: #fff;
+        border: 0;
+        display: block;
+        width: 20%;
+        padding: 10px;
+        font-size: 16px;
+        color: #333;
+        border: 1px solid #e5e5e5;
+    }
+
+    form .search-for-trip {
+        background: #605DEC;
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+        width: 10%;
+        color: white
+    }
+
+    header {
+        background-color:#F1EDF2;
+    }
+    header .header-logo{
+        font-size: 60px;
+        font-weight: bolder;
+        background-image: linear-gradient(720deg, #5654d6, #334ff3, #7107f1);
+
+        background-size: 100%;
+        background-repeat: repeat;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container-fluid {
+        background-color:#F1EDF2;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+
+    }
+
+    .navbar-nav .active{
+        color: #605DEC;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+      font-size: large;
+    }
+
+    .sign-up {
+        background-color: #605DEC;
+    }
+
+    footer > div > a, p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    select option:hover{
+        background-color: #5654d6;
+    }
+
+    footer > p{
+        text-align: center;
+    }
+
+    .license{
+        text-align: center;
+    }
+    footer {
+        clear: both;
+    }
+    #nav ul li a.active-page{
+        color: #605DEC;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #605DEC;
+        border-color: #605DEC;
+        font-size: large;
+    }
+
+    .btn-2 {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #605DEC;
+        border-color: #605DEC;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 7rem;
+        border-radius: .25rem;
+    }
+
+    .card-body {
+        padding: 57px 65px;
+        padding-bottom: 65px;
+    }
+    
+    .card {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: #fff;
+        width: fit-content;
+    }
+    
+    .card-4 {
+        margin-top: 100px;
+        background: #fff;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    }
+    
+    .card-4a {
+        margin-top: 60px;
+        background: #fff;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 400px) {
+        .card-4 .card-body {
+            padding: 50px 40px;
+        }
+    }
+    
+    .card{
+        height: fit-content;
+        width: fit-content;
+        padding: 20px;
+    }
+    
+    .wrapper--w680 {
+        max-width: 620px;
+    }
+    
+    .input-style {
+        line-height: 30px;
+        background: #fafafa;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 7px;
+        font-size: 16px;
+        color: #666;
+        margin: 5px;
+        width: 450px;
+        border-width: thin;
+        border-collapse: separate; 
+        border-bottom-right-radius:10px;
+        border-top-right-radius:10px;
+    }
+    
+    .btn-style {
+        border-width: 0ch;
+        margin-left: 67%;
+    }
+    
+    
+    .row-space {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      
+    }
+    
+    
+    .pass{
+        border-color: #605DEC;
+    }
+    
+    .wrapper-sign-up{
+        display: flex;
+        width: 500px;
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+        margin: 0 auto;
+    }
+    
+    .signup-button{
+        width: 450px;
+        border-radius: 7px;
+        margin: 5px;
+    }
+    
+    .create-button{
+        width: 450px;
+        border-radius: 7px;
+        margin: 5px;
+        background-color: red;
+    }
+    .title {
+        text-align: center;
+    }
+    
+    .card-body h6 {
+        text-align: center;
+    }
+    
+    footer {
+        position: relative;
+        margin-top: 180px;
+        clear: both;
+    }
+
+    footer .logo{
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    footer .information, footer .contact{
+        margin-top: 80px;
+    }
+    
+    .information {
+        font-weight: bold;
+    }
+    
