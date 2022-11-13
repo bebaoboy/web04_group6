@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/personalPage.css">
+    <link rel="stylesheet" href="../css/ticketinfo.css">
+
+    <title> TRIP 04 </title>
+</head>
+
+<style>
+    
+</style>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #F1EDF2;" > 
+        <a href="/" class="navbar-brand mx-5 py-3">
+            <div class="logo-image mx-5">
+                <img src="/img/Logo.png" class="img-fluid">
+            </div>
+        </a>
+        <div class="collapse navbar-collapse mx-5 ms-5">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Về Chúng Tôi</a>
+                </li>
+                <li class="nav-item d-none">
+                    <a href="/Signin.html" class="nav-link">Đăng Nhập</a>
+                </li>
+                <li class="nav-item d-none">
+                    <a class="btn btn-primary btn-lg mx-auto su-but" href="/Signup.html" style="display: inline-block;font-weight: 400;line-height: 1.5;color: #fff;background-color: #605DEC;border-color: #605DEC;">
+                      Đăng Ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+    <main>
+        <div class="outline">
+            <div class="option-page">
+                <div class="tab-item">
+                    <img class="icon" src="../icon/user-small.png">
+                    <a href="personal-page-userinfo.html"><span>Thông tin cá nhân</span></a>
+                </div>
+                <div class="tab-item active">
+                    <img class="icon" src="../icon/ticket-small.png">
+                    <a href="personal-page-userticket.html"><span>Vé của tôi</span></a>
+                </div>
+                <div class="tab-item">
+                    <img class="icon" src="../icon/changepass-small.png">
+                    <a href="personal-page-changepass.html"><span>Đổi mật khẩu</span></a>
+                </div>
+                <div class="tab-item">
+                    <img class="icon" src="../icon/logout-small.png">
+                    <span>Đăng xuất</span>
+                </div>
+            </div>
+
+            <div class="tab-pane">
+                <div class="container-row">
+                    <a href="javascript:void(0)" onclick="openstate(event, 'current');">
+                        <div class="tab-item tablink bottombar w3-padding">Hiện tại</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openstate(event, 'traveled');">
+                        <div class="tab-item tablink bottombar w3-padding">Đã đi</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openstate(event, 'Canceled');">
+                        <div class="tab-item tablink bottombar w3-padding">Đã hủy</div>
+                    </a>
+                </div>
+
+                <div id="current" class="container-row state" style="display:none">
+                    <p>Hiện không có chuyến đi nào</p>
+                </div>
+
+                <div id="traveled" class="container-row state" style="display:none">
+                    <p>Bạn chưa đi chuyến nào</p>
+                </div>
+
+                <div id="Canceled" class="container-row state" style="display:none">
+                    <p>Bạn chưa đặt chuyến nào</p>
+                </div>
+            </div>
+
+            <script>
+                function openstate(evt, stateName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("state");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+                    }
+                    document.getElementById(stateName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-border-red";
+                }
+            </script>
+
+
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+
+
+    <!--Footer-->
+    <!-- Contact and About section-->
+    <footer class="footer bg text-center text-lg-start text-white" style="background-color: #F1EDF2;">
+        <!-- Grid container -->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 mx-auto p-lg-5">
+              <div class="d-flex align-items-center justify-content-center mx-auto" style="width: 150px; height: 150px;">
+                <a href="/"">
+                  <img src="/img/Logo.png" alt=""loading="lazy" />
+                </a>  
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-lg-4">
+  
+              <ul class="list-unstyled">
+                <li class="mb-0 pt-5">
+                  <h3><b>Về chúng tôi</b></h3>
+                </li>
+                <li class="mb-0 pt-2">
+                  <h5>Công ty TNHH Thương mại Dịch vụ Trip4</h5>
+                </li>
+                <li class="mb-2 pt-2">
+                  <p>Địa chỉ: Số 1 Nguyễn Văn Cừ, Phường 3, Quận 5, Thành phố Hồ Chí Minh</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 pb-5">
+  
+              <ul class="list-unstyled">
+                <li class="mb-0 pt-5">
+                  <h3><b>Liên hệ</b></h3>
+                </li>
+                <li class="mb-0 pt-2">
+                  <h5>Hotline: 1900 123456</b></h5>
+                </li>
+                <li class="mb-2 pt-2">
+                  <p>7:00 - 21:00, Thứ 2 - Chủ nhật</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: white; color: #4f4550;">
+          © 2022 | Bản quyền thuộc về công ty Trip04
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+
+</html>
