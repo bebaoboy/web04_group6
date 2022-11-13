@@ -1,0 +1,27 @@
+
+    .tab-pane{
+        padding: 40px 3px;
+        content:"";display:table;clear:both;
+        width: fit-content;
+    }
+
+    .container-row{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .tab-item{
+        float: left;
+        width: 100%;
+        color: #000;
+        font-family: Nunito Sans, sans-serif;
+    }
+
+    .w3-padding{padding:8px 100px!important}
+
+    .bottombar{border-bottom:6px solid rgb(203, 203, 203)!important}
+
+    .w3-container{padding:0.01em 16px}
+
+    .w3-border-red,.w3-hover-border-red:hover{border-color:#5654d6!important; color: #605DEC}
