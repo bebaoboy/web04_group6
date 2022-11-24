@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="css/image_slider.css">
     <link rel="stylesheet" href="css/selectSeat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-   <style>
+
+    <style>
         .checked {
             color: orange;
         }
@@ -193,7 +193,8 @@
 
                 <div class="trip-select-details" class="d-block">
 
-                    <button class="btn btn-choose-trip btn-primary" style="float:right; margin-left: 30px;">
+                    <button class="btn btn-choose-trip btn-primary" style="float:right; margin-left: 30px;"
+                        onclick="showSeatBooking()">
                         Chọn chuyến
                     </button>
                     <button type="button" class="btn btn-detail btn-primary" style="float: right;"
@@ -306,9 +307,24 @@
 
 
                     <script>
-                        function showTripDetails() {
+
+                        function showSeatBooking() {
                             document.querySelector('.tab-pane').style =
-                                "display: table;";
+                                "display: none;"
+
+                            document.querySelector('.seat-select').className = "seat-select d-flex flex-column justify-content-center";
+                        }
+
+                        function showTripDetails() {
+                            if (document.querySelector('.tab-pane').style ===
+                                "display: table;") {
+                                document.querySelector('.tab-pane').style =
+                                    "display: none;"
+                            } else {
+                                document.querySelector('.tab-pane').style =
+                                    "display: table;";
+                            }
+                            document.querySelector('.seat-select').className = "seat-select"
                         }
 
                         function openstate(evt, stateName) {
@@ -327,7 +343,7 @@
                     </script>
                 </div>
 
-                <div class="seat-select d-flex flex-column justify-content-center">
+                <div class="seat-select" style="display: none">
                     <section class=" empty-section p-3 mx-auto"></section>
                     <hr>
                     <div class="d-flex justify-content-center">
