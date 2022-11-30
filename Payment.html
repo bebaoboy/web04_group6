@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trip4 Vé xe giá rẻ</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<style>
+    .page_title,
+    .title {
+        color: #605DEC;
+    }
+
+    .text span {
+        color: #7C8DB0;
+        font-size: large;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 600px;
+        height: 400px;
+    }
+
+   
+    .format {
+        margin: 0 60px;
+    }
+    
+    .titleText{
+        color: #747474
+    }
+
+    .contentText{
+        color: #333333;
+        font-size: medium;
+    }
+ 
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #F1EDF2;">
+        <a href="/" class="navbar-brand mx-5 py-3">
+            <div class="logo-image mx-5">
+                <img src="/img/Logo.png" class="img-fluid">
+            </div>
+        </a>
+        <div class="collapse navbar-collapse mx-5 ms-5">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Về Chúng Tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Signin.html" class="nav-link">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary btn-lg mx-auto su-but" href="/Signup.html"
+                        style="display: inline-block;font-weight: 400;line-height: 1.5;color: #fff;background-color: #605DEC;border-color: #605DEC;">
+                        Đăng Ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class=" empty-section p-5 mx-auto"></section>
+
+    <main>
+        <div class="d-flex flex-column align-items-lg-end" style="margin: 0 300px 0 200px">
+            <div class="main-body d-flex justify-content-center
+                align-content-center" style="width: fit-content; margin: 0 280px 0 0;">
+                <div class="page_title" style="width: fit-content; color: #0E63C1; background-color: #ECF4FD;
+                    padding: 10px 5px">
+                    Phương thức thanh toán đa dạng, bảo mật
+                </div>
+            </div>
+
+            <div class="d-flex flex-lg-row justify-content-between" style="width: fit-content;
+                    margin: 0 70px 0 200px;">
+                <div style="margin-top: 30px" class="card-payment">
+                    <span class="h4">Phương thức thanh toán</span>
+                    <div class="list-group" style="width: fit-content; margin-top: 20px">
+                        <div class="form-check list-group-item" style="padding-left: 30px;">
+                            <img src="img/momo.png" alt="momo">
+                            <input class="form-check-input" type="radio" id="momoPayment" name="selectPayment">
+                            <label class="form-check-label" for="momoPayment">
+                                Thanh toán momo
+                            </label>
+                            <p>Điện thoại của bạn phải được cài ứng dụng momo</p>
+                        </div>
+
+                        <div class="form-check list-group-item" style="padding-left: 30px;">
+                            <img src="img/bus_station.png" alt="directPayment">
+                            <input class="form-check-input" type="radio" name="selectPayment" id="directPayment">
+                            <label class="form-check-label" for="directPayment">
+                                Thanh toán khi lên xe
+                            </label>
+                            <p>Bạn có thể thanh toán cho tài xế khi lên xe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-left: 50px" class="ticket-info">
+                    <div style="margin-top: 30px; margin-left: 40px;">
+                        <span class="h4">Thông tin chuyến đi</span>
+                    </div>
+                    <div class="ticket-info-body border-1" style="border-style: solid;border-color: #F1EDF2;
+                        padding: 20px; margin-top: 20px">
+                        <div class="container d-flex align-items-md-start">
+                            <div class="passengerInfo d-flex flex-column">
+                                <span class="titleText">Hành khách</span>
+                                <p class="namePassenger contentText">bebaoboy</p>
+                                <span class="titleText">Số điện thoại</span>
+                                <p class="phonePassenger contentText">07182378959</p>
+                                <span class="titleText">Email</span>
+                                <p class="emailPassenger contentText">bebao@gmail.com</p>
+                            </div>
+                            <button class="adjustDeparture btn " style="float:right; border: none;">
+                                <img src="img/pen-blue.png">Sửa
+                            </button>
+                        </div>
+                        <hr />
+                        <div class="container">
+                            <span class="titleText">Nhà xe</span>
+                            <p>Vie limousine</p>
+                        </div>
+                        <div class="container d-flex align-items-md-start justify-content-between">
+                            <div class="departureInfo d-flex flex-column">
+                                <p class="titleText">Điểm đón (dự kiến)</p>
+                                <p class="contentText">
+                                    <time class="departureTime">09:00</time> <span>-</span>
+                                    <span class="departureDate">31/10/2022</span>
+                                    <br>
+                                    <span class="departurePlace">Văn phòng quận 1</span>
+                                </p>
+                            </div>
+                            <button class="adjustDeparture btn " style="float:right; border: none;">
+                                <img src="img/pen-blue.png">Thay đổi
+                            </button>
+                        </div>
+
+                        <div class="container d-flex align-items-md-start justify-content-between">
+                            <div class="arrival-info d-flex flex-column">
+                                <p class="titleText">Điểm trả (dự kiến)</p>
+                                <p class="contentText">
+                                    <time class="arrivalTime">09:00</time> <span>-</span>
+                                    <span class="arrivalDate">31/10/2022</span>
+                                    <br>
+                                    <span class="arrivalPlace">Văn phòng Vũng Tàu</span>
+                                </p>
+                            </div>
+                            <button class="adjustArrival btn " style="border: none;">
+                                <img src="img/pen-blue.png">Thay đổi
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-flex flex-column" style="width: fit-content; float: right;
+                padding-right: 70px">
+                <div class="d-flex">
+                     <span style="margin-right: 150px; font-size: large;"> Tổng tiền</span>
+                     <span class="price" style="color: #0060C4; font-size: large;"> 210.000 đ</span>
+                </div>    
+                <p><a href="#" style="color: #7C8DB0; float: right">xem chi tiết</a></p>
+                <div class="d-flex">
+                    <button class="btn btn-primary" style="background-color:#605DEC; margin-right:140px">Hủy</button>
+                    <button class="btn btn-primary" style="background-color:#605DEC">Thanh Toán</button>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Empty Section for some space-->
+    <section class=" empty-section p-5 mx-auto"></section>
+
+    <!--Footer-->
+    <!-- Contact and About section-->
+    <footer class="footer bg text-center text-lg-start text-white" style="background-color: #F1EDF2;">
+        <!-- Grid container -->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 mx-auto p-lg-5">
+                <div class="d-flex align-items-center justify-content-center mx-auto"
+                    style="width: 150px; height: 150px;">
+                    <a href="/"">
+                <img src=" /img/Logo.png" alt="" loading="lazy" />
+                    </a>
+                </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4">
+
+                <ul class="list-unstyled">
+                    <li class="mb-0 pt-5">
+                        <h3><b>Về chúng tôi</b></h3>
+                    </li>
+                    <li class="mb-0 pt-2">
+                        <h5>Công ty TNHH Thương mại Dịch vụ Trip4</h5>
+                    </li>
+                    <li class="mb-2 pt-2">
+                        <p>Địa chỉ: Số 1 Nguyễn Văn Cừ, Phường 3, Quận 5, Thành phố Hồ Chí Minh</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 pb-5">
+
+                <ul class="list-unstyled">
+                    <li class="mb-0 pt-5">
+                        <h3><b>Liên hệ</b></h3>
+                    </li>
+                    <li class="mb-0 pt-2">
+                        <h5>Hotline: 1900 123456</b></h5>
+                    </li>
+                    <li class="mb-2 pt-2">
+                        <p>7:00 - 21:00, Thứ 2 - Chủ nhật</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: white; color: #4f4550;">
+            © 2022 | Bản quyền thuộc về công ty Trip04
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
