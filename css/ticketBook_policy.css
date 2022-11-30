@@ -1,0 +1,44 @@
+.cancellation-policy-container{
+    position: relative;
+    display: flex;
+    padding-top: 44px;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: white;
+    top: 47px;
+    right: 5%;
+}
+
+.marking{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    bottom: 100px;
+}
+
+.circle.today:before {
+    content: "Hôm nay";
+    font-size: 12px;
+    position: absolute;
+    top: -35px;
+    width: max-content;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transform: translateX(-43%);
+}
+
+.circle.today {
+    left: 75%;
+}
+
+*, :after, :before{
+    box-sizing: border-box;
+}
