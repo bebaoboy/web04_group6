@@ -14,11 +14,11 @@
 </head>
 
 <style>
-    .changepass-card {
+    /* .changepass-card {
         width: fit-content;
         height: fit-content;
         margin: 50px;
-    }
+    } */
 
     .row-space {
         -webkit-box-pack: justify;
@@ -65,8 +65,8 @@
       </nav>
 
     <main>
-        <div class="outline">
-            <div class="option-page">
+        <div class="outline  row mt-5 p-0 d-flex justify-content-center">
+            <div class="option-page mb-3 mb-md-0 p-3 col-md-2 col-12">
                 <div class="tab-item">
                     <img class="icon" src="../icon/user-small.png">
                     <a href="personal-page-userinfo.html"><span>Thông tin cá nhân</span></a>
@@ -84,9 +84,9 @@
                     <span>Đăng xuất</span>
                 </div>
             </div>
-            <div class="changepass-card">
+            <div class="changepass-card mx-3 p-0 col-md-6 col-12">
                 <form method="POST">
-                    <div class="row row-space">
+                    <div class="row row-space p-0">
                         <div class="mb-3">
                           <label for="oldpass" class="form-label">Mật khẩu hiện tại</label>
                           <input type="password" class="form-control" id="oldpass">
@@ -95,7 +95,7 @@
                           <label for="confirmNewpass" class="form-label">Xác nhận mật khẩu mới</label>
                           <input type="password" class="form-control" id="confirmNewpass">
                         </div>
-                        <button type="submit" class="btn btn-primary" style="background-color:#605DEC; border-color:#605DEC;">Cập nhật thông tin</button>
+                        <button type="submit" class="btn btn-primary  mx-auto mt-3" style="width: 500px; align-content: center; background-color:#605DEC; border-color:#605DEC;">Cập nhật thông tin</button>
                     </div>
                 </form>
             </div>

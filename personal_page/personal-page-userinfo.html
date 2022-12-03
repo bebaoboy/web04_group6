@@ -14,9 +14,9 @@
 
 <style>
     .userinfo-card {
-        width: fit-content;
-        height: fit-content;
-        margin: 50px;
+        /* width: fit-content; */
+        /* height: fit-content; */
+        /* margin: 50px; */
     }
 
     .row-space {
@@ -64,8 +64,8 @@
       </nav>
 
     <main>
-        <div class="outline">
-            <div class="option-page">
+        <div class="outline row mt-5 p-0 d-flex justify-content-center">
+            <div class="option-page mb-3 mb-md-0 p-3 col-md-2 col-12">
                 <div class="tab-item active">
                     <img class="icon" src="../icon/user-small.png">
                     <a href="personal-page-userinfo.html"><span>Thông tin cá nhân</span></a>
@@ -83,24 +83,21 @@
                     <span>Đăng xuất</span>
                 </div>
             </div>
-
-            <div class="userinfo-card">
+            <div class="userinfo-card mx-3 p-0 col-md-6 col-12">
                 <form method="POST">
-                    <div class="row row-space">
+                    <div class="row row-space p-0">
                         <label class="form-label">Họ và Tên</label>
-                        <input type="text" class="form-control" name="name" id="name">
+                        <input type="text" class="form-control mb-3" name="name" id="name">
                         <label for="phone" class="form-label">Số điện thoại</label>
-                        <input type="tel" class="form-control" name="phone" id="phone" >
+                        <input type="tel" class="form-control mb-3" name="phone" id="phone" >
                         <label for="dob" class="form-label">Ngày sinh</label>
-                        <input type="date" class="form-control" id="dob" >
+                        <input type="date" class="form-control mb-3" id="dob" >
                         <label for="gender" class="form-label">Giới tính</label>  
+                        <input type="text" class="form-control mb-3" name="gender" id="gender">
                         <!-- Thêm thông tin về gender--> 
-                        <div class="container" style="padding-left: 150px;">
-                          <button type="submit" class="btn btn-primary mx-auto" style="width: 500px; align-content: center; background-color: #605DEC; align-items: center; border-color: #605DEC;">
+                          <button type="submit" class="btn btn-primary mx-auto mt-3" style="width: 500px; align-content: center; background-color: #605DEC; align-items: center; border-color: #605DEC;">
                             Cập nhật thông tin
                           </button>
-                        </div>  
-
                     </div>
                 </form>
             </div>
@@ -119,7 +116,7 @@
             <!--Grid column-->
             <div class="col-lg-4 mx-auto p-lg-5">
               <div class="d-flex align-items-center justify-content-center mx-auto" style="width: 150px; height: 150px;">
-                <a href="/"">
+                <a href="/">
                   <img src="/img/Logo.png" alt=""loading="lazy" />
                 </a>  
               </div>

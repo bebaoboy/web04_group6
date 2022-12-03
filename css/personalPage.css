@@ -9,11 +9,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    border-style: solid;
-    width: fit-content;
+    border: 2px solid #605DEC;
+    border-radius: 16px;
+    /* width: fit-content; */
     height: auto;
-    padding: 25px;
-    margin: 50px;
+    /* margin: 50px; */
 }
 
 .option-page .tab-item{
@@ -56,5 +56,10 @@ img.icon{
   color: black;
 }
 
-
+.userinfo-card,
+.changepass-card,
+.ticketHistory-card {
+    border: 2px solid #605DEC;
+    border-radius: 16px;
+}
 

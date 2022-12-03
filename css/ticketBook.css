@@ -4,8 +4,14 @@
 }
 
 .list-trip{
-    width: fit-content;
+    width: 50%;
     height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .list-trip {
+        width: 100%;
+    }
 }
 
 .sort-vexe select{
@@ -17,10 +23,11 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     background: #fff;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     padding: 20px;
-    margin: 60px 300px;
+    margin: 60px 0px;
+    /* margin: 60px 300px; */
 }
 
 .card-body {
@@ -28,9 +35,18 @@
 }
 
 .select-limousine{
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content;
+    height: fit-content; */
+    border-radius: 16px;
+    border:1px solid rgba(0, 0, 0, 0.3);
 }
+
+.select-limousine .btn{
+    border-color:#605DEC;
+    border-radius: 12px;
+    background-color: #605DEC;
+}
+
 
 time{
     font-size: x-large;
@@ -40,9 +56,20 @@ time{
     display: flex;
 }
 
+.card-content .cardIMG {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-content .cardIMG img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .car-information ul li{
     background-color: #F1EDF2;
-    border-radius: 10px;
+    border-radius: 8px;
     display: inline-flex;
     width: max-content;
 }
@@ -81,9 +108,9 @@ time{
     display: flex;
 }
 
-.place-from{
+/* .place-from{
     margin: 0 0 20px 0;
-}
+} */
 
 .from-to-content .place-from{
     padding: 0 10px px 10px;
@@ -94,7 +121,13 @@ time{
 }
 
 .trip-select-detail{
-    width: max-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.trip-select-detail .tab-pane {
+    width: 100%;
+    display: flex;
 }
 
 .booking{
@@ -109,7 +142,7 @@ time{
     
 }
 
-.tab-item a:link{
+.tab-item:link{
     text-decoration: none;
 }
 
@@ -131,12 +164,13 @@ time{
 }
 
 
-.tab-pane{
-    display:table;
-    width: fit-content;
+.tab-pane {
+    width: 100%;
+    /* display:table;
+    width: fit-content; */
 }
 
-.container-row{
+/* .container-row{
     display: flex;
     align-items: center;
 }
@@ -147,7 +181,7 @@ time{
     width: max-content;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .tab-item{
     float: left;
@@ -166,3 +200,22 @@ div{
 .w3-container{padding:0.01em 16px}
 
 .w3-border-red,.w3-hover-border-red:hover{border-color:#5654d6!important; color: #605DEC}
+
+#Ratings .totalRating {
+    background-color: #605DEC;
+    color: white;
+    border-radius: 8px;
+}
+
+#Ratings .totalNum {
+    color:rgba(0, 0, 0, 0.7); 
+}
+
+#Ratings .review-item-container {
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 8px;
+}
+
+#Ratings .review-item-container .review-footer {
+    font-size: 12px;
+}
