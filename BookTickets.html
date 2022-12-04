@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/ticketBook.css">
     <link rel="stylesheet" href="css/image_slider.css">
     <link rel="stylesheet" href="css/selectSeat.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/0685499d97.js" crossorigin="anonymous"></script>
 
     <style>
         .checked {
@@ -135,425 +135,420 @@
         </form>
         <div class="list-trip container">
             <div class="select-limousine card col-md-6 col-12">
-                    <div class="card-title row m-0 mb-3 p-0 d-flex justify-content-start">
-                        <div class="timeGroup col-4 col-md-3 mb-md-0 mb-3 me-2 me-md-0 p-0 d-flex">
-                            <time>19:00</time>
-                            <i class="fa-solid fa-arrow-right mx-2 d-flex justify-content-center align-items-center"></i>
-                            <time>22:00</time>
-                        </div>
-                        <h4 class=" fs-4 fw-bold col-6 col-md-3 m-0 mb-md-0 mb-3">Hoa Mai</h4>
-                        <div class="titleBtnGroup col-12 col-md-6 p-0 d-flex justify-content-start justify-content-md-end">
-                            <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-phone fa-sm me-2 d-flex justify-content-center align-items-center"></i>
-                                <p class="m-0">028 388 1234</p>
-                            </button>
-                            <button class="btn btn-primary d-flex align-items-center ms-3 px-2 py-1">
-                                <i class="fa fa-star fa-sm me-2"></i>
-                                <p class="m-0">4.0 (3)</p>
-                            </button>
-                            <!-- <button type="button" class="btn btn-primary">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </button> -->
-                        </div>
+                <div class="card-title row m-0 mb-3 p-0 d-flex justify-content-start">
+                    <div class="timeGroup col-4 col-md-3 mb-md-0 mb-3 me-2 me-md-0 p-0 d-flex">
+                        <time>19:00</time>
+                        <i class="fa-solid fa-arrow-right mx-2 d-flex justify-content-center align-items-center"></i>
+                        <time>22:00</time>
                     </div>
-                    <div class="card-content row m-0 p-0 g-0">
-                        <div class="cardIMG" style="width: 150px; height: 150px;">
-                            <img src="https://benthanhford.com.vn/gw-content/images/limousine2019-wiLp0.jpg"
-                                alt="limousine" />
-                        </div>
-                        <div class="car-information">
-                            <ul>
-                                <li class="price px-2 py-1" id="seat-price">180.000<span>đ</span></li>
-                                <li class="type px-2 py-1" id="car-type">Limousine</li>
-                                <li class="aval-seat px-2 py-1" id="seat-left">10<span class="ms-1">Chỗ trống</span></li>
-                            </ul>
-                            <div class="from-to">
-                                <svg class="TicketPC__LocationRoute" xmlns="http://www.w3.org/2000/svg" width="14"
-                                    height="74" viewBox="0 0 14 74">
-                                    <path fill="none" stroke="#787878" stroke-linecap="round" stroke-width="2"
-                                        stroke-dasharray="0 7" d="M7 13.5v46"></path>
-                                    <g fill="none" stroke="#484848" stroke-width="3">
-                                        <circle cx="7" cy="7" r="7" stroke="none"></circle>
-                                        <circle cx="7" cy="7" r="5.5"></circle>
-                                    </g>
-                                    <path
-                                        d="M7 58a5.953 5.953 0 0 0-6 5.891 5.657 5.657 0 0 0 .525 2.4 37.124 37.124 0 0 0 5.222 7.591.338.338 0 0 0 .506 0 37.142 37.142 0 0 0 5.222-7.582A5.655 5.655 0 0 0 13 63.9 5.953 5.953 0 0 0 7 58zm0 8.95a3.092 3.092 0 0 1-3.117-3.06 3.117 3.117 0 0 1 6.234 0A3.092 3.092 0 0 1 7 66.95z"
-                                        fill="green">
-                                    </path>
-                                </svg>
-                                <div class="from-to-content">
-                                    <div class="content-time">
-                                        <div class="hour-depart">19:00</div>
-                                        <div class="duration" style="color: green;">3h</div>
-                                        <div class="hour-arrive">22:00</div>
-                                    </div>
-    
-                                    <div class="content-place">
-                                        <div class="place-from mb-md-4 mb-0">• Bến Hình Miền Đông (Khu công nghiệp, Cần Giuộc, Long An)
-                                        </div>
-                                        <div class="place-to">• Bến Hình Khách Vũng Tàu</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trip-select-details" class="d-block">
-                        <button class="btn btn-choose-trip btn-primary ms-3" style="float:right;"
-                            onclick="showSeatBooking()">
-                            Chọn chuyến
+                    <h4 class=" fs-4 fw-bold col-6 col-md-3 m-0 mb-md-0 mb-3">Hoa Mai</h4>
+                    <div class="titleBtnGroup col-12 col-md-6 p-0 d-flex justify-content-start justify-content-md-end">
+                        <button type="button" class="btn btn-primary d-flex justify-content-center align-items-center">
+                            <i
+                                class="fa-solid fa-phone fa-sm me-2 d-flex justify-content-center align-items-center"></i>
+                            <p class="m-0">028 388 1234</p>
                         </button>
-                        <button type="button" class="btn btn-detail btn-primary" style="float: right;"
-                            onclick="showTripDetails()">
-                            Thông tin chi tiết</button>
-                        <section class=" empty-section p-3 mx-auto"></section>
-                        <div class="tab-pane" style="display: none;">
+                        <button class="btn btn-primary d-flex align-items-center ms-3 px-2 py-1">
+                            <i class="fa fa-star fa-sm me-2"></i>
+                            <p class="m-0">4.0 (3)</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content row m-0 p-0 g-0">
+                    <div class="cardIMG" style="width: 150px; height: 150px;">
+                        <img src="https://benthanhford.com.vn/gw-content/images/limousine2019-wiLp0.jpg"
+                            alt="limousine" />
+                    </div>
+                    <div class="car-information container-fluid">
+                        <ul>
+                            <li class="price px-2 py-1" id="seat-price">180.000<span>đ</span></li>
+                            <li class="type px-2 py-1" id="car-type">Limousine</li>
+                            <li class="aval-seat px-2 py-1" id="seat-left">10<span class="ms-1">Chỗ trống</span></li>
+                        </ul>
+                        <div class="from-to">
+                            <svg class="TicketPC__LocationRoute" xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="74" viewBox="0 0 14 74">
+                                <path fill="none" stroke="#787878" stroke-linecap="round" stroke-width="2"
+                                    stroke-dasharray="0 7" d="M7 13.5v46"></path>
+                                <g fill="none" stroke="#484848" stroke-width="3">
+                                    <circle cx="7" cy="7" r="7" stroke="none"></circle>
+                                    <circle cx="7" cy="7" r="5.5"></circle>
+                                </g>
+                                <path
+                                    d="M7 58a5.953 5.953 0 0 0-6 5.891 5.657 5.657 0 0 0 .525 2.4 37.124 37.124 0 0 0 5.222 7.591.338.338 0 0 0 .506 0 37.142 37.142 0 0 0 5.222-7.582A5.655 5.655 0 0 0 13 63.9 5.953 5.953 0 0 0 7 58zm0 8.95a3.092 3.092 0 0 1-3.117-3.06 3.117 3.117 0 0 1 6.234 0A3.092 3.092 0 0 1 7 66.95z"
+                                    fill="green">
+                                </path>
+                            </svg>
+                            <div class="from-to-content">
+                                <div class="content-time">
+                                    <div class="hour-depart">19:00</div>
+                                    <div class="duration" style="color: green;">3h</div>
+                                    <div class="hour-arrive">22:00</div>
+                                </div>
+
+                                <div class="content-place">
+                                    <div class="place-from mb-md-4 mb-0">• Bến Hình Miền Đông (Khu công nghiệp, Cần
+                                        Giuộc, Long An)
+                                    </div>
+                                    <div class="place-to">• Bến Hình Khách Vũng Tàu</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip-select-details" class="d-block">
+                    <button class="btn btn-choose-trip btn-primary ms-3" style="float:right;"
+                        onclick="showSeatBooking()">
+                        Chọn chuyến
+                    </button>
+                    <button type="button" class="btn btn-detail btn-primary" style="float: right;"
+                        onclick="showTripDetails()">
+                        Thông tin chi tiết</button>
+                    <section class=" empty-section p-3 mx-auto"></section>
+                    <div class="tab-pane" style="display: none;">
+                        <hr>
+                        <div class="detailsPane row p-0 d-flex justify-content-center">
+                            <a class="col-4 p-0 text-center" href="javascript:void(0)"
+                                onclick="openstate(event, 'AllImages');">
+                                <div class="tab-item tablink bottombar">Hình Ảnh</div>
+                            </a>
+                            <a class="col-4 p-0 text-center" href="javascript:void(0)"
+                                onclick="openstate(event, 'Rules');">
+                                <div class="tab-item tablink bottombar">Chính Sách</div>
+                            </a>
+                            <a class="col-4 p-0 text-center" href="javascript:void(0)"
+                                onclick="openstate(event, 'Ratings');">
+                                <div class="tab-item tablink bottombar">Đánh Giá</div>
+                            </a>
+                        </div>
+
+                        <div id="AllImages" class="container-row state" style="display:none">
+                            <div class="container" id="allImages" style="width: auto;">
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 6</div>
+                                    <img src="https://image.thanhnien.vn/w1024/Uploaded/2022/rutmtz/2022_06_13/z3488884229344-9fe41142b3bf0147a5cb3f50297f8de7-3655.jpg"
+                                        class="car-image" style="width:50%; margin: 0 25%;">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 6</div>
+                                    <img src="https://hoamaicar.com/wp-content/uploads/slider/cache/1f3c6f9cb404c891d4e7d132a32ce39f/31973bef26e6e5b8bcf7.jpg"
+                                        class="car-image" style="width:50%; margin: 0 25%;">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 6</div>
+                                    <img src="https://lh4.googleusercontent.com/GJ4oZS472k7xN-uL9gMOrcww1guwOdCvzEUaA3Bjp6HUFHHXQ3GuLsfHYESnhqYxM_ZjJ5H35S9tbVaO1sFkNFlvPRkveP0kR03EkGnY6aGmlsP5ZY4x4F4NW0mgXAmuDRTI-WOK"
+                                        class="car-image" style="width:50%; margin: 0 25%;">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 6</div>
+                                    <img src="https://hoamaicar.com/wp-content/uploads/2021/03/slider-1.jpg"
+                                        class="car-image" style="width:50%; margin: 0 25%;">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">5 / 6</div>
+                                    <img src="https://benthanhford.com.vn/gw-content/images/limousine2019-wiLp0.jpg"
+                                        class="car-image" style="width:50%; margin: 0 25%;">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">6 / 6</div>
+                                    <img src="https://limo24h.vn/wp-content/uploads/2019/03/2018_0605_122321_005.jpg"
+                                        class="car-image" style="width:50%; margin: 0 25%;">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- Image text -->
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="column">
+                                        <img class="thumbnail cursor"
+                                            src="https://image.thanhnien.vn/w1024/Uploaded/2022/rutmtz/2022_06_13/z3488884229344-9fe41142b3bf0147a5cb3f50297f8de7-3655.jpg"
+                                            style="width:100%" onclick="currentSlide(1)" alt="Hình 1">
+                                    </div>
+                                    <div class="column">
+                                        <img class="thumbnail cursor"
+                                            src="https://hoamaicar.com/wp-content/uploads/slider/cache/1f3c6f9cb404c891d4e7d132a32ce39f/31973bef26e6e5b8bcf7.jpg"
+                                            style="width:100%" onclick="currentSlide(2)" alt="Hình 2">
+                                    </div>
+                                    <div class="column">
+                                        <img class="thumbnail cursor"
+                                            src="https://lh4.googleusercontent.com/GJ4oZS472k7xN-uL9gMOrcww1guwOdCvzEUaA3Bjp6HUFHHXQ3GuLsfHYESnhqYxM_ZjJ5H35S9tbVaO1sFkNFlvPRkveP0kR03EkGnY6aGmlsP5ZY4x4F4NW0mgXAmuDRTI-WOK"
+                                            style="width:100%" onclick="currentSlide(3)" alt="Hình 3">
+                                    </div>
+                                    <div class="column">
+                                        <img class="thumbnail cursor"
+                                            src="https://hoamaicar.com/wp-content/uploads/2021/03/slider-1.jpg"
+                                            style="width:100%" onclick="currentSlide(4)" alt="Hình 4">
+                                    </div>
+                                    <div class="column">
+                                        <img class="thumbnail cursor"
+                                            src="https://benthanhford.com.vn/gw-content/images/limousine2019-wiLp0.jpg"
+                                            style="width:100%" onclick="currentSlide(5)" alt="Hình 5">
+                                    </div>
+                                    <div class="column">
+                                        <img class="thumbnail cursor"
+                                            src="https://limo24h.vn/wp-content/uploads/2019/03/2018_0605_122321_005.jpg"
+                                            style="width:100%" onclick="currentSlide(6)" alt="Hình 6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Rules" class="container-row state px-3" style="display:none">
+                            <div class="Cancellation my-4">
+                                <h3 class="fw-bold">Chính sách hủy vé</h3>
+                            </div>
+                            <div class="cancellation-timeline p-0 row m-3 g-0 position-relative">
+                                <div class="timeBefore row col-6 p-0 m-0">
+                                    <p class="col-12 mb-2 text-center fs-5">Hôm nay</p>
+                                    <div class="processBar col-12 lh-md mb-2 text-center"
+                                        style="background: rgb(255, 199, 0);">
+                                        <i class="fa-solid fa-circle" style="color: white;"></i>
+                                    </div>
+                                    <p class="col-12 fs-5 text-center m-0">Không mất phí</p>
+                                </div>
+                                <div class="position-absolute top-0 start-50 translate-middle w-auto mt-3 text-center">
+                                    <p class="fw-bold m-0 p-0 lh-sm">18:50</p>
+                                    <p class="m-0 p-0 lh-sm">18/11/2022</p>
+                                </div>
+                                <div class="timeAfter col-6 p-0">
+                                    <p class="col-12 mb-2 pe-2 text-end fw-bold fs-5">Khởi hành</p>
+                                    <div class="processBar col-12 lh-md mb-2 text-end"
+                                        style="background: rgb(241, 0, 0);">
+                                        <i class="fa-solid fa-circle me-5" style="color: white;"></i>
+                                    </div>
+                                    <p class="col-12 fs-5 text-center m-0">Phí hủy 100%</p>
+                                </div>
+                            </div>
+                            <div class="note mx-3">
+                                <strong>Ghi Chú : </strong>Phí huỷ sẽ được tính trên giá gốc, không giảm trừ khuyến mãi
+                                hoặc giảm giá; đồng thời không vượt quá số tiền quý khách đã thanh toán.
+                            </div>
                             <hr>
-                            <div class="detailsPane row p-0 d-flex justify-content-center">
-                                <a class="col-4 p-0 text-center" href="javascript:void(0)"
-                                    onclick="openstate(event, 'AllImages');">
-                                    <div class="tab-item tablink bottombar">Hình Ảnh</div>
-                                </a>
-                                <a class="col-4 p-0 text-center" href="javascript:void(0)"
-                                    onclick="openstate(event, 'Rules');">
-                                    <div class="tab-item tablink bottombar">Chính Sách</div>
-                                </a>
-                                <a class="col-4 p-0 text-center" href="javascript:void(0)"
-                                    onclick="openstate(event, 'Ratings');">
-                                    <div class="tab-item tablink bottombar">Đánh Giá</div>
-                                </a>
+                            <div class="policy-group-container m-3">
+                                <p class="fs-5 fw-bold">Yêu cầu khi lên xe:</p>
+                                <ul>
+                                    <li>
+                                        <p>Có mặt tại văn phòng/quầy vé/bến xe trước 30 phút để làm thủ tục lên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Đổi vé giấy trước khi lên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Xuất trình SMS/Email đặt vé trước khi lên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Không mang đồ ăn, thức ăn có mùi lên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Không hút thuốc, uống rượu, sử dụng chất kích thích trên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Không mang các vật dễ cháy nổ lên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Không vứt rác trên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Không làm ồn, gây mất trật tự trên xe</p>
+                                    </li>
+                                    <li>
+                                        <p>Không mang giày, dép trên xe </p>
+                                    </li>
+                                </ul>
+                                <p class="fs-5 fw-bold">Hành lý xách tay:</p>
+                                <ul>
+                                    <li>
+                                        <p>Tổng trọn lượng hành lý không vượt quá 20 Kg</p>
+                                    </li>
+                                    <li>
+                                        <p>Không vận chuyển hành hóa cồng kềnh</p>
+                                    </li>
+                                </ul>
+                                <p class="fs-5 fw-bold">Trẻ em và phụ nữ có thai:</p>
+                                <ul>
+                                    <li>
+                                        <p>Trẻ em dưới 7 tuổi hoặc dưới 130 cm được miễn phí vé nếu ngồi cùng ghế/giường
+                                            với bố mẹ</p>
+                                    </li>
+                                    <li>
+                                        <p>Phụ nữ mang thai cần đảm bảo sức khỏe trong suốt quá trình di chuyển</p>
+                                    </li>
+                                    <li>
+                                        <p>Nhà xe có quyền từ chối phục vụ nếu hành khách không tuân thủ quy định về trẻ
+                                            em và phụ nữ có thai</p>
+                                    </li>
+                                </ul>
                             </div>
-    
-                            <div id="AllImages" class="container-row state" style="display:none">
-                                <div class="container" id="allImages" style="width: auto;">
-                                    <div class="mySlides">
-                                        <div class="numbertext">1 / 6</div>
-                                        <img src="https://image.thanhnien.vn/w1024/Uploaded/2022/rutmtz/2022_06_13/z3488884229344-9fe41142b3bf0147a5cb3f50297f8de7-3655.jpg"
-                                            class="car-image" style="width:50%; margin: 0 25%;">
-                                    </div>
-    
-                                    <div class="mySlides">
-                                        <div class="numbertext">2 / 6</div>
-                                        <img src="https://hoamaicar.com/wp-content/uploads/slider/cache/1f3c6f9cb404c891d4e7d132a32ce39f/31973bef26e6e5b8bcf7.jpg"
-                                            class="car-image" style="width:50%; margin: 0 25%;">
-                                    </div>
-    
-                                    <div class="mySlides">
-                                        <div class="numbertext">3 / 6</div>
-                                        <img src="https://lh4.googleusercontent.com/GJ4oZS472k7xN-uL9gMOrcww1guwOdCvzEUaA3Bjp6HUFHHXQ3GuLsfHYESnhqYxM_ZjJ5H35S9tbVaO1sFkNFlvPRkveP0kR03EkGnY6aGmlsP5ZY4x4F4NW0mgXAmuDRTI-WOK"
-                                            class="car-image" style="width:50%; margin: 0 25%;">
-                                    </div>
-    
-                                    <div class="mySlides">
-                                        <div class="numbertext">4 / 6</div>
-                                        <img src="https://hoamaicar.com/wp-content/uploads/2021/03/slider-1.jpg"
-                                            class="car-image" style="width:50%; margin: 0 25%;">
-                                    </div>
-    
-                                    <div class="mySlides">
-                                        <div class="numbertext">5 / 6</div>
-                                        <img src="https://benthanhford.com.vn/gw-content/images/limousine2019-wiLp0.jpg"
-                                            class="car-image" style="width:50%; margin: 0 25%;">
-                                    </div>
-    
-                                    <div class="mySlides">
-                                        <div class="numbertext">6 / 6</div>
-                                        <img src="https://limo24h.vn/wp-content/uploads/2019/03/2018_0605_122321_005.jpg"
-                                            class="car-image" style="width:50%; margin: 0 25%;">
-                                    </div>
-    
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-                                    <!-- Image text -->
-                                    <div class="caption-container">
-                                        <p id="caption"></p>
-                                    </div>
-    
-                                    <div class="row">
-                                        <div class="column">
-                                            <img class="thumbnail cursor"
-                                                src="https://image.thanhnien.vn/w1024/Uploaded/2022/rutmtz/2022_06_13/z3488884229344-9fe41142b3bf0147a5cb3f50297f8de7-3655.jpg"
-                                                style="width:100%" onclick="currentSlide(1)" alt="Hình 1">
-                                        </div>
-                                        <div class="column">
-                                            <img class="thumbnail cursor"
-                                                src="https://hoamaicar.com/wp-content/uploads/slider/cache/1f3c6f9cb404c891d4e7d132a32ce39f/31973bef26e6e5b8bcf7.jpg"
-                                                style="width:100%" onclick="currentSlide(2)" alt="Hình 2">
-                                        </div>
-                                        <div class="column">
-                                            <img class="thumbnail cursor"
-                                                src="https://lh4.googleusercontent.com/GJ4oZS472k7xN-uL9gMOrcww1guwOdCvzEUaA3Bjp6HUFHHXQ3GuLsfHYESnhqYxM_ZjJ5H35S9tbVaO1sFkNFlvPRkveP0kR03EkGnY6aGmlsP5ZY4x4F4NW0mgXAmuDRTI-WOK"
-                                                style="width:100%" onclick="currentSlide(3)" alt="Hình 3">
-                                        </div>
-                                        <div class="column">
-                                            <img class="thumbnail cursor"
-                                                src="https://hoamaicar.com/wp-content/uploads/2021/03/slider-1.jpg"
-                                                style="width:100%" onclick="currentSlide(4)" alt="Hình 4">
-                                        </div>
-                                        <div class="column">
-                                            <img class="thumbnail cursor"
-                                                src="https://benthanhford.com.vn/gw-content/images/limousine2019-wiLp0.jpg"
-                                                style="width:100%" onclick="currentSlide(5)" alt="Hình 5">
-                                        </div>
-                                        <div class="column">
-                                            <img class="thumbnail cursor"
-                                                src="https://limo24h.vn/wp-content/uploads/2019/03/2018_0605_122321_005.jpg"
-                                                style="width:100%" onclick="currentSlide(6)" alt="Hình 6">
-                                        </div>
-                                    </div>
+                        </div>
+
+                        <div id="Ratings" class="container-row state" style="display:none">
+                            <div class="ratings d-flex mx-3 mb-4 p-0">
+                                <div class="totalRating d-flex me-3 px-2 py-1">
+                                    <i class="fa fa-star me-2 d-flex align-items-center"></i>
+                                    <span class="fs-5">4.0</span>
                                 </div>
+                                <div class="stars d-flex align-items-center me-3">
+                                    <i class="fa fa-star fa-lg checked"></i>
+                                    <i class="fa fa-star fa-lg checked"></i>
+                                    <i class="fa fa-star fa-lg checked"></i>
+                                    <i class="fa fa-star fa-lg checked"></i>
+                                    <i class="fa fa-star fa-lg"></i>
+                                </div>
+                                <div class="totalNum d-flex align-items-center fs-5">(3 đánh giá)</div>
                             </div>
-    
-                            <div id="Rules" class="container-row state px-3" style="display:none">
-                                <div class="Cancellation my-4">
-                                    <h3 class="fw-bold">Chính sách hủy vé</h3>
-                                </div>
-                                <div class="cancellation-timeline p-0 row m-3 g-0 position-relative">
-                                    <div class="timeBefore row col-6 p-0 m-0">
-                                        <p class="col-12 mb-2 text-center fs-5">Hôm nay</p>
-                                        <div class="processBar col-12 lh-md mb-2 text-center"
-                                            style="background: rgb(255, 199, 0);">
-                                            <i class="fa-solid fa-circle" style="color: white;"></i>
+                            <div class="review-item-container p-3 mb-3">
+                                <div class="review-title mb-3 mx-2">
+                                    <div class="row info-row d-flex justify-content-start m-0 mb-2 p-0">
+                                        <img class="review-avatar col-1 p-0"
+                                            src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg"
+                                            alt="review-avatar" width="40" height="40">
+                                        <p class="col-5 fs-5 m-0 ms-1 p-0">Khang Phạm </p>
+                                    </div>
+                                    <div class="row rating-row d-flex justify-content-start m-0 p-0">
+                                        <div class="rating-stars-container">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
                                         </div>
-                                        <p class="col-12 fs-5 text-center m-0">Không mất phí</p>
                                     </div>
-                                    <div class="position-absolute top-0 start-50 translate-middle w-auto mt-3 text-center">
-                                        <p class="fw-bold m-0 p-0 lh-sm">18:50</p>
-                                        <p class="m-0 p-0 lh-sm">18/11/2022</p>
-                                    </div>
-                                    <div class="timeAfter col-6 p-0">
-                                        <p class="col-12 mb-2 pe-2 text-end fw-bold fs-5">Khởi hành</p>
-                                        <div class="processBar col-12 lh-md mb-2 text-end"
-                                            style="background: rgb(241, 0, 0);">
-                                            <i class="fa-solid fa-circle me-5" style="color: white;"></i>
+                                </div>
+                                <div class="review-body mx-3">
+                                    <p class="mb-2"> Nhân viên nghe
+                                        máy hotline xấu tính, chửi mắng và quát khách, xe đến điểm trả muộn gần 1
+                                        tiếng, đón khách dọc đường nhiều, trong xe tài xế bật nhạc sàn rất to</p>
+                                </div>
+                                <div class="review-footer mx-3">
+                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                        <div class="verifySection col-6 m-0 p-0 d-flex">
+                                            <p class="m-0 me-2">Đã mua vé</p>
+                                            <div class="material-icons-wrapper md-16 verified-icon ">
+                                                <i class="material-icons-round color--positive">(verified)</i>
+                                            </div>
                                         </div>
-                                        <p class="col-12 fs-5 text-center m-0">Phí hủy 100%</p>
+                                        <p class="col-6 fst-italic m-0 p-0 text-end"> Đăng ngày 20/11/2022</p>
                                     </div>
-                                </div>
-                                <div class="note mx-3">
-                                    <strong>Ghi Chú : </strong>Phí huỷ sẽ được tính trên giá gốc, không giảm trừ khuyến mãi
-                                    hoặc giảm giá; đồng thời không vượt quá số tiền quý khách đã thanh toán.
-                                </div>
-                                <hr>
-                                <div class="policy-group-container m-3">
-                                    <p class="fs-5 fw-bold">Yêu cầu khi lên xe:</p>
-                                    <ul>
-                                        <li>
-                                            <p>Có mặt tại văn phòng/quầy vé/bến xe trước 30 phút để làm thủ tục lên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Đổi vé giấy trước khi lên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Xuất trình SMS/Email đặt vé trước khi lên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Không mang đồ ăn, thức ăn có mùi lên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Không hút thuốc, uống rượu, sử dụng chất kích thích trên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Không mang các vật dễ cháy nổ lên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Không vứt rác trên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Không làm ồn, gây mất trật tự trên xe</p>
-                                        </li>
-                                        <li>
-                                            <p>Không mang giày, dép trên xe </p>
-                                        </li>
-                                    </ul>
-                                    <p class="fs-5 fw-bold">Hành lý xách tay:</p>
-                                    <ul>
-                                        <li>
-                                            <p>Tổng trọn lượng hành lý không vượt quá 20 Kg</p>
-                                        </li>
-                                        <li>
-                                            <p>Không vận chuyển hành hóa cồng kềnh</p>
-                                        </li>
-                                    </ul>
-                                    <p class="fs-5 fw-bold">Trẻ em và phụ nữ có thai:</p>
-                                    <ul>
-                                        <li>
-                                            <p>Trẻ em dưới 7 tuổi hoặc dưới 130 cm được miễn phí vé nếu ngồi cùng ghế/giường
-                                                với bố mẹ</p>
-                                        </li>
-                                        <li>
-                                            <p>Phụ nữ mang thai cần đảm bảo sức khỏe trong suốt quá trình di chuyển</p>
-                                        </li>
-                                        <li>
-                                            <p>Nhà xe có quyền từ chối phục vụ nếu hành khách không tuân thủ quy định về trẻ
-                                                em và phụ nữ có thai</p>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
-    
-                            <div id="Ratings" class="container-row state" style="display:none">
-                                <div class="ratings d-flex mx-3 mb-4 p-0">
-                                    <div class="totalRating d-flex me-3 px-2 py-1">
-                                        <i class="fa fa-star me-2 d-flex align-items-center"></i>
-                                        <span class="fs-5">4.0</span>
+                            <div class="review-item-container p-3 mb-3">
+                                <div class="review-title mb-3 mx-2">
+                                    <div class="row info-row d-flex justify-content-start m-0 mb-2 p-0">
+                                        <img class="review-avatar col-1 p-0"
+                                            src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg"
+                                            alt="review-avatar" width="40" height="40">
+                                        <p class="col-5 fs-5 m-0 ms-1 p-0">Nguyễn Đức Minh</p>
                                     </div>
-                                    <div class="stars d-flex align-items-center me-3">
-                                        <i class="fa fa-star fa-lg checked"></i>
-                                        <i class="fa fa-star fa-lg checked"></i>
-                                        <i class="fa fa-star fa-lg checked"></i>
-                                        <i class="fa fa-star fa-lg checked"></i>
-                                        <i class="fa fa-star fa-lg"></i>
-                                    </div>
-                                    <div class="totalNum d-flex align-items-center fs-5">(3 đánh giá)</div>
-                                </div>
-                                <div class="review-item-container p-3 mb-3">
-                                    <div class="review-title mb-3 mx-2">
-                                        <div class="row info-row d-flex justify-content-start m-0 mb-2 p-0">
-                                            <img class="review-avatar col-1 p-0"
-                                                src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg"
-                                                alt="review-avatar" width="40" height="40">
-                                            <p class="col-5 fs-5 m-0 ms-1 p-0">Khang Phạm </p>
-                                        </div>
-                                        <div class="row rating-row d-flex justify-content-start m-0 p-0">
-                                            <div class="rating-stars-container">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review-body mx-3">
-                                        <p class="mb-2"> Nhân viên nghe
-                                            máy hotline xấu tính, chửi mắng và quát khách, xe đến điểm trả muộn gần 1
-                                            tiếng, đón khách dọc đường nhiều, trong xe tài xế bật nhạc sàn rất to</p>
-                                    </div>
-                                    <div class="review-footer mx-3">
-                                        <div class="row m-0 p-0 d-flex justify-content-start">
-                                            <div class="verifySection col-6 m-0 p-0 d-flex">
-                                                <p class="m-0 me-2">Đã mua vé</p>
-                                                <div class="material-icons-wrapper md-16 verified-icon ">
-                                                    <i class="material-icons-round color--positive">(verified)</i>
-                                                </div>
-                                            </div>
-                                            <p class="col-6 fst-italic m-0 p-0 text-end"> Đăng ngày 20/11/2022</p>
+                                    <div class="row rating-row d-flex justify-content-start m-0 p-0">
+                                        <div class="rating-stars-container">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="review-item-container p-3 mb-3">
-                                    <div class="review-title mb-3 mx-2">
-                                        <div class="row info-row d-flex justify-content-start m-0 mb-2 p-0">
-                                            <img class="review-avatar col-1 p-0"
-                                                src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg"
-                                                alt="review-avatar" width="40" height="40">
-                                            <p class="col-5 fs-5 m-0 ms-1 p-0">Nguyễn Đức Minh</p>
-                                        </div>
-                                        <div class="row rating-row d-flex justify-content-start m-0 p-0">
-                                            <div class="rating-stars-container">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star"></span>
+                                <div class="review-body mx-3">
+                                    <p class="mb-2">Tốt</p>
+                                </div>
+                                <div class="review-footer mx-3">
+                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                        <div class="verifySection col-6 m-0 p-0 d-flex">
+                                            <p class="m-0 me-2">Đã mua vé</p>
+                                            <div class="material-icons-wrapper md-16 verified-icon ">
+                                                <i class="material-icons-round color--positive">(verified)</i>
                                             </div>
                                         </div>
+                                        <p class="col-6 fst-italic m-0 p-0 text-end"> Đăng ngày 20/11/2022</p>
                                     </div>
-                                    <div class="review-body mx-3">
-                                        <p class="mb-2">Tốt</p>
+                                </div>
+                            </div>
+                            <div class="review-item-container p-3 mb-3">
+                                <div class="review-title mb-3 mx-2">
+                                    <div class="row info-row d-flex justify-content-start m-0 mb-2 p-0">
+                                        <img class="review-avatar col-1 p-0"
+                                            src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg"
+                                            alt="review-avatar" width="40" height="40">
+                                        <p class="col-5 fs-5 m-0 ms-1 p-0">Huy Thiện</p>
                                     </div>
-                                    <div class="review-footer mx-3">
-                                        <div class="row m-0 p-0 d-flex justify-content-start">
-                                            <div class="verifySection col-6 m-0 p-0 d-flex">
-                                                <p class="m-0 me-2">Đã mua vé</p>
-                                                <div class="material-icons-wrapper md-16 verified-icon ">
-                                                    <i class="material-icons-round color--positive">(verified)</i>
-                                                </div>
-                                            </div>
-                                            <p class="col-6 fst-italic m-0 p-0 text-end"> Đăng ngày 20/11/2022</p>
+                                    <div class="row rating-row d-flex justify-content-start m-0 p-0">
+                                        <div class="rating-stars-container">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="review-item-container p-3 mb-3">
-                                    <div class="review-title mb-3 mx-2">
-                                        <div class="row info-row d-flex justify-content-start m-0 mb-2 p-0">
-                                            <img class="review-avatar col-1 p-0"
-                                                src="https://storage.googleapis.com/fe-production/svgIcon/avatar.svg"
-                                                alt="review-avatar" width="40" height="40">
-                                            <p class="col-5 fs-5 m-0 ms-1 p-0">Huy Thiện</p>
-                                        </div>
-                                        <div class="row rating-row d-flex justify-content-start m-0 p-0">
-                                            <div class="rating-stars-container">
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star checked"></span>
-                                                <span class="fa fa-star"></span>
+                                <div class="review-body mx-3">
+                                    <p class="mb-2">Xe đón khách đúng vị trí, đón sớm hơn dự định nhưng xe chạy khá ẩu
+                                    </p>
+                                </div>
+                                <div class="review-footer mx-3">
+                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                        <div class="verifySection col-6 m-0 p-0 d-flex">
+                                            <p class="m-0 me-2">Đã mua vé</p>
+                                            <div class="material-icons-wrapper md-16 verified-icon ">
+                                                <i class="material-icons-round color--positive">(verified)</i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="review-body mx-3">
-                                        <p class="mb-2">Xe đón khách đúng vị trí, đón sớm hơn dự định nhưng xe chạy khá ẩu
-                                        </p>
-                                    </div>
-                                    <div class="review-footer mx-3">
-                                        <div class="row m-0 p-0 d-flex justify-content-start">
-                                            <div class="verifySection col-6 m-0 p-0 d-flex">
-                                                <p class="m-0 me-2">Đã mua vé</p>
-                                                <div class="material-icons-wrapper md-16 verified-icon ">
-                                                    <i class="material-icons-round color--positive">(verified)</i>
-                                                </div>
-                                            </div>
-                                            <p class="col-6 fst-italic m-0 p-0 text-end"> Đăng ngày 20/11/2022</p>
-                                        </div>
+                                        <p class="col-6 fst-italic m-0 p-0 text-end"> Đăng ngày 20/11/2022</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <script>
-    
-                        function showSeatBooking() {
+                </div>
+                <script>
+
+                    function showSeatBooking() {
+                        document.querySelector('.tab-pane').style =
+                            "display: none;"
+
+                        document.querySelector('.seat-select').className = "seat-select d-flex flex-column justify-content-center";
+                    }
+
+                    function showTripDetails() {
+                        if (document.querySelector('.tab-pane').style ===
+                            "display: table;") {
                             document.querySelector('.tab-pane').style =
                                 "display: none;"
-    
-                            document.querySelector('.seat-select').className = "seat-select d-flex flex-column justify-content-center";
+                        } else {
+                            document.querySelector('.tab-pane').style =
+                                "display: table;";
                         }
-    
-                        function showTripDetails() {
-                            if (document.querySelector('.tab-pane').style ===
-                                "display: table;") {
-                                document.querySelector('.tab-pane').style =
-                                    "display: none;"
-                            } else {
-                                document.querySelector('.tab-pane').style =
-                                    "display: table;";
-                            }
-                            document.querySelector('.seat-select').className = "seat-select"
+                        document.querySelector('.seat-select').className = "seat-select"
+                    }
+
+                    function openstate(evt, stateName) {
+                        var i, x, tablinks;
+                        x = document.getElementsByClassName("state");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
                         }
-    
-                        function openstate(evt, stateName) {
-                            var i, x, tablinks;
-                            x = document.getElementsByClassName("state");
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none";
-                            }
-                            tablinks = document.getElementsByClassName("tablink");
-                            for (i = 0; i < x.length; i++) {
-                                tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-                            }
-                            document.getElementById(stateName).style.display = "block";
-                            evt.currentTarget.firstElementChild.className += " w3-border-red";
+                        tablinks = document.getElementsByClassName("tablink");
+                        for (i = 0; i < x.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
                         }
-                    </script>
+                        document.getElementById(stateName).style.display = "block";
+                        evt.currentTarget.firstElementChild.className += " w3-border-red";
+                    }
+                </script>
             </div>
             <div class="seat-select" style="display: none">
-                <section class=" empty-section p-3 mx-auto"></section>
+                <section class=" empty-section p-1 mx-auto"></section>
                 <hr>
                 <div class="d-flex justify-content-center">
                     <div class="fa-circle">
@@ -566,11 +561,13 @@
                 </div>
                 <section class=" empty-section p-5 mx-auto"></section>
                 <div class="container seat-map-with-title">
-                    <span style="border-style: solid; border-radius: 4px;
-                             padding: 10px 100px; margin-left: 40px; margin: 0 150px;
-                             background-color: #FFFBF5;" class="border-1">
+                    <div style="border-style: solid; border-radius: 4px;
+                             padding: 10px 100px; margin: 0 200px;
+                             background-color: #FFFBF5;
+                             text-align: center;" 
+                             class="border-1 d-flex align-items-center justify-content-center">
                         Sơ đồ chuyến đi
-                    </span>
+                    </div>
                     <div class="container" id="seat-map" style="float: right;">
                         <div class="row">
                             <div class="seat">1</div>
@@ -612,15 +609,15 @@
                 <div class="d-block">
                     <div>
                         <span class="text"> Tổng vé: </span>
-                        <span class="amount">0</span>
+                        <span class="amount">3</span>
                         <span class="text">Ghế: </span>
                         <span class="list-seat">1, 2, 3</span>
 
                         <button style="float: right; margin-left: 10px" class="btn btn-primary" onclick="proceedFill()">
-                            Tiếp tục
+                            <a href="Payment.html" style="color: white; text-decoration: none;">Tiếp tục</a>
                         </button>
                         <p class="text" style="float: right;">
-                            Tổng cộng: <span id="total"></span>
+                            Tổng cộng: <span id="total">540.000</span>
                             <span>đ</span>
                         </p>
                     </div>

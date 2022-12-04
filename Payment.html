@@ -29,20 +29,19 @@
         height: 400px;
     }
 
-   
+
     .format {
         margin: 0 60px;
     }
-    
-    .titleText{
+
+    .titleText {
         color: #747474
     }
 
-    .contentText{
+    .contentText {
         color: #333333;
         font-size: medium;
     }
- 
 </style>
 
 <body>
@@ -79,19 +78,19 @@
     <section class=" empty-section p-5 mx-auto"></section>
 
     <main>
-        <div class="d-flex flex-column align-items-lg-end" style="margin: 0 300px 0 200px">
-            <div class="main-body d-flex justify-content-center
-                align-content-center" style="width: fit-content; margin: 0 280px 0 0;">
-                <div class="page_title" style="width: fit-content; color: #0E63C1; background-color: #ECF4FD;
+        <div class="d-flex flex-column align-items-center">
+            <div class="d-flex justify-content-center
+                align-items-center" style="width: fit-content;">
+                <div class="page_title" style="color: #0E63C1; background-color: #ECF4FD;
                     padding: 10px 5px">
                     Phương thức thanh toán đa dạng, bảo mật
                 </div>
             </div>
 
             <div class="d-flex flex-lg-row justify-content-between" style="width: fit-content;
-                    margin: 0 70px 0 200px;">
+                    ">
                 <div style="margin-top: 30px" class="card-payment">
-                    <span class="h4">Phương thức thanh toán</span>
+                    <span class="h4 d-flex align-content-center">Phương thức thanh toán</span>
                     <div class="list-group" style="width: fit-content; margin-top: 20px">
                         <div class="form-check list-group-item" style="padding-left: 30px;">
                             <img src="img/momo.png" alt="momo">
@@ -113,77 +112,85 @@
                     </div>
                 </div>
 
-                <div style="margin-left: 50px" class="ticket-info">
-                    <div style="margin-top: 30px; margin-left: 40px;">
-                        <span class="h4">Thông tin chuyến đi</span>
-                    </div>
-                    <div class="ticket-info-body border-1" style="border-style: solid;border-color: #F1EDF2;
+                <div class="d-flex flex-column align-items-center" style="width: fit-content">
+                    <div style="margin-left: 20px" class="ticket-info">
+                        <div style="margin-top: 30px; margin-left: 40px;">
+                            <span class="h4">Thông tin chuyến đi</span>
+                        </div>
+                        <div class="ticket-info-body border-1" style="border-style: solid;border-color: #F1EDF2;
                         padding: 20px; margin-top: 20px">
-                        <div class="container d-flex align-items-md-start">
-                            <div class="passengerInfo d-flex flex-column">
-                                <span class="titleText">Hành khách</span>
-                                <p class="namePassenger contentText">bebaoboy</p>
-                                <span class="titleText">Số điện thoại</span>
-                                <p class="phonePassenger contentText">07182378959</p>
-                                <span class="titleText">Email</span>
-                                <p class="emailPassenger contentText">bebao@gmail.com</p>
+                            <div class="container d-flex align-items-md-start">
+                                <div class="passengerInfo d-flex flex-column">
+                                    <span class="titleText">Hành khách</span>
+                                    <p class="namePassenger contentText">bebaoboy</p>
+                                    <span class="titleText">Số điện thoại</span>
+                                    <p class="phonePassenger contentText">07182378959</p>
+                                    <span class="titleText">Email</span>
+                                    <p class="emailPassenger contentText">bebao@gmail.com</p>
+                                </div>
+                                <button class="adjustDeparture btn "
+                                    style="float:right; border: none; margin-left: 10px;">
+                                    <img src="img/pen-blue.png">Sửa
+                                </button>
                             </div>
-                            <button class="adjustDeparture btn " style="float:right; border: none;">
-                                <img src="img/pen-blue.png">Sửa
-                            </button>
-                        </div>
-                        <hr />
-                        <div class="container">
-                            <span class="titleText">Nhà xe</span>
-                            <p>Vie limousine</p>
-                        </div>
-                        <div class="container d-flex align-items-md-start justify-content-between">
-                            <div class="departureInfo d-flex flex-column">
-                                <p class="titleText">Điểm đón (dự kiến)</p>
-                                <p class="contentText">
-                                    <time class="departureTime">09:00</time> <span>-</span>
-                                    <span class="departureDate">31/10/2022</span>
-                                    <br>
-                                    <span class="departurePlace">Văn phòng quận 1</span>
-                                </p>
+                            <hr />
+                            <div class="container">
+                                <span class="titleText">Nhà xe</span>
+                                <p>Vie limousine</p>
                             </div>
-                            <button class="adjustDeparture btn " style="float:right; border: none;">
-                                <img src="img/pen-blue.png">Thay đổi
-                            </button>
+                            <div class="container d-flex align-items-md-start justify-content-between">
+                                <div class="departureInfo d-flex flex-column">
+                                    <p class="titleText">Điểm đón (dự kiến)</p>
+                                    <p class="contentText">
+                                        <time class="departureTime">09:00</time> <span>-</span>
+                                        <span class="departureDate">31/10/2022</span>
+                                        <br>
+                                        <span class="departurePlace">Văn phòng quận 1</span>
+                                    </p>
+                                </div>
+                                <button class="adjustDeparture btn " style="float:right; border: none;">
+                                    <img src="img/pen-blue.png">Thay đổi
+                                </button>
+                            </div>
+
+                            <div class="container d-flex align-items-md-start justify-content-between">
+                                <div class="arrival-info d-flex flex-column">
+                                    <p class="titleText">Điểm trả (dự kiến)</p>
+                                    <p class="contentText">
+                                        <time class="arrivalTime">09:00</time> <span>-</span>
+                                        <span class="arrivalDate">31/10/2022</span>
+                                        <br>
+                                        <span class="arrivalPlace">Văn phòng Vũng Tàu</span>
+                                    </p>
+                                </div>
+                                <button class="adjustArrival btn " style="border: none;">
+                                    <img src="img/pen-blue.png">Thay đổi
+                                </button>
+                            </div>
+
                         </div>
 
-                        <div class="container d-flex align-items-md-start justify-content-between">
-                            <div class="arrival-info d-flex flex-column">
-                                <p class="titleText">Điểm trả (dự kiến)</p>
-                                <p class="contentText">
-                                    <time class="arrivalTime">09:00</time> <span>-</span>
-                                    <span class="arrivalDate">31/10/2022</span>
-                                    <br>
-                                    <span class="arrivalPlace">Văn phòng Vũng Tàu</span>
-                                </p>
-                            </div>
-                            <button class="adjustArrival btn " style="border: none;">
-                                <img src="img/pen-blue.png">Thay đổi
-                            </button>
-                        </div>
 
                     </div>
 
+                    <div class="d-flex flex-column" style="width: fit-content; float:right;
+                        padding: 0 50px">
+                        <p class="d-flex justify-content-around">
+                            <span style="font-size: large; margin-right:70px"> Tổng tiền</span>
+                            <span class="price" style="color: #0060C4; font-size: large;"> 210.000 đ</span>
+                        </p>
+                        <p><a href="#" style="color: #7C8DB0; margin-right:20px; float: right;">xem chi tiết</a></p>
+                        <div class="d-flex justify-content-between" style="margin: 0 20px">
+                            <button class="btn btn-primary" style="background-color:#605DEC">Thanh Toán</button>
+                            <button class="btn btn-primary"
+                                style="background-color:#605DEC; margin-left: 120px">Hủy</button>  
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <div class="d-flex flex-column" style="width: fit-content; float: right;
-                padding-right: 70px">
-                <div class="d-flex">
-                     <span style="margin-right: 150px; font-size: large;"> Tổng tiền</span>
-                     <span class="price" style="color: #0060C4; font-size: large;"> 210.000 đ</span>
-                </div>    
-                <p><a href="#" style="color: #7C8DB0; float: right">xem chi tiết</a></p>
-                <div class="d-flex">
-                    <button class="btn btn-primary" style="background-color:#605DEC; margin-right:140px">Hủy</button>
-                    <button class="btn btn-primary" style="background-color:#605DEC">Thanh Toán</button>
-                </div>
-                
-            </div>
+
         </div>
 
     </main>
