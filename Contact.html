@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trip4 Vé xe giá rẻ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<style>
+    .page_title,
+    .title {
+        color: #605DEC;
+    }
+
+    .text span {
+        color: #7C8DB0;
+        font-size: large;
+    }
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 600px;
+        height: 400px;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 600px;
+        height: 400px;
+    }
+
+    .gmap_iframe {
+        width: 600px !important;
+        height: 400px !important;
+        margin: 0 90px;
+    }
+
+    .format {
+        margin: 0 60px;
+    }
+
+    .image-address {
+        margin-right: 130px;
+    }
+
+    .signup-button {
+        width: 100px;
+        height: 50px;
+        float: right;
+        margin: 0 30px;
+    }
+
+    .form-map {
+        margin: 0 100px;
+    }
+
+    .search-address{
+        display: inline;
+        float: start;
+    }
+    
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #F1EDF2;">
+        <a href="/" class="navbar-brand mx-5 py-3">
+            <div class="logo-image mx-5">
+                <img src="/img/Logo.png" class="img-fluid">
+            </div>
+        </a>
+        <div class="collapse navbar-collapse mx-5 ms-5">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Contact.html" class="nav-link active-page">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/AboutUs.html" class="nav-link">Về Chúng Tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Signin.html" class="nav-link">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary btn-lg mx-auto su-but" href="/Signup.html"
+                        style="display: inline-block;font-weight: 400;line-height: 1.5;color: #fff;background-color: #605DEC;border-color: #605DEC;">
+                        Đăng Ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class=" empty-section p-5 mx-auto"></section>
+
+    <main>
+        <div class="main-body">
+            <div class="d-flex justify-content-center h1 page_title">
+                Liên Hệ
+            </div>
+        </div>
+        <div class="text">
+            <span class="d-flex justify-content-center align-content-center">Cảm ơn các bạn đã ghé thăm website của
+                chúng tôi. Nếu các bạn muốn nhận <br>
+                được thông tin từ chúng tôi dễ dàng, hãy điền vào form dưới đây</span>
+        </div>
+        <section class="empty-section p-5 mx-auto"></section>
+        <div class="container d-flex justify-content-center">
+            <div class="format float">
+                <form method="POST">
+                    <div class="row row-space">
+                        <div class="input">
+                            <label for="fname">Họ và tên *:</label>
+                            <br>
+                            <input class="input-style" type="name" id="name" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="input">
+                            <label for="fname">Số Điện Thoại*:</label>
+                            <br>
+                            <input class="input-style" type="tel" id="tel" placeholder="Nhập số điện thoại" required>
+                        </div>
+                        <div class="input">
+                            <label for="fname">Email*:</label>
+                            <br>
+                            <input class="input-style" type="email" id="email" placeholder="Nhập email" required>
+                        </div>
+                        <div class="input">
+                            <label for="fname">Tiêu đề*:</label>
+                            <br>
+                            <input class="input-style" type="text" id="text" placeholder="Tiêu đề" required>
+                        </div>
+                        <div class="input">
+                            <label for="fname">Nội Dung*:</label>
+                            <br>
+                            <textarea rows="5" cols="53" placeholder="Nội dung " style="resize: none;" required> </textarea>
+                        </div>
+                        <div class="input" style="margin-left: 50px;" >
+                            <button class="signup-button btn btn--radius-2 btn-primary" type="submit">Gửi</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="image-address">
+                <div class="mapouter mt-4">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="30" marginwidth="60"
+                            src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=đại học khoa học tự nhiên&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe>
+                        <a href="https://piratebay-proxys.com/">Piratebay</a>
+                    </div>
+                    <div class="address"  style="text-align: left; font-size: large; margin-left: 90px;">
+                        <span>Địa Chỉ: số 227 Nguyễn Văn Cừ, Phường 3, Quận 5, TP.HCM </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+        <section class=" empty-section p-5 mx-auto"></section>
+
+        <div class="title d-flex justify-content-center align-content-center h2">
+            <p>Danh sách nhà xe</p>
+        </div>
+        <div class="search-container d-flex justify-content-center">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Tìm kiếm nhà xe" name="search" class="input-style">
+              <button type="submit" class="signup-button btn btn--radius-2 btn-primary ms-0 mt-1">Submit</button>
+            </form>
+          </div>
+
+        <section class=" empty-section p-5 mx-auto"></section>
+
+        <div class="Southside">
+            <div class="title h3">
+                <span class="d-flex align-content-center justify-content-center">Miền nam</span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="Namvang col">
+                        <p class="fw-bold">Nhà xe Nam Vang</p>
+                        <p>Sdt: 0901203201</p>
+                        <p>Địa chỉ: 308 Lý Thường Kiệt,TP Cà Mau</p>
+                    </div>
+                    <div class="Haisai col">
+                        <p class="fw-bold">Nhà xe Hải Sản</p>
+                        <p>Sdt: 0935648878</p>
+                        <p>Địa chỉ: 11 Nam Kỳ Khởi Nghĩa,TPHCM</p>
+                    </div>
+                    <div class="CuuLong col">
+                        <p class="fw-bold">Nhà xe Cửu Long</p>
+                        <p>Sdt: 0789652212</p>
+                        <p>Địa chỉ: 187 Lê Hồng Phong,Q5,TPHCM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Northside">
+            <div class="title h3 d-flex align-content-center justify-content-center">
+                <p>Miền Bắc</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="Ngo col">
+                        <p class="fw-bold">Nhà xe Ngỏ</p>
+                        <p>Sdt: 0987541111</p>
+                        <p>Địa chỉ: 29 Trích Sài, Tây Hồ, Hà Nội</p>
+                    </div>
+                    <div class="HaDong col">
+                        <p class="fw-bold">Nhà xe Hà Đông</p>
+                        <p>Sdt: 091456544</p>
+                        <p>Địa chỉ:35B Nguyễn Hữu Huân, quận Hoàn Kiếm, Hà Nội</p>
+                    </div>
+                    <div class="HaiPhong col">
+                        <p class="fw-bold">Nhà xe Hải Phòng</p>
+                        <p>Sdt: 0933355621</p>
+                        <p>Địa chỉ: 35B Nguyễn Hữu Huân, Hà Nội</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </main>
+
+    <!-- Empty Section for some space-->
+    <section class=" empty-section p-5 mx-auto"></section>
+
+    <!--Footer-->
+    <!-- Contact and About section-->
+    <footer class="footer bg text-center text-lg-start text-white" style="background-color: #F1EDF2;">
+        <!-- Grid container -->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 mx-auto p-lg-5">
+                <div class="d-flex align-items-center justify-content-center mx-auto"
+                    style="width: 150px; height: 150px;">
+                    <a href="/"">
+                <img src=" /img/Logo.png" alt="" loading="lazy" />
+                    </a>
+                </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4">
+
+                <ul class="list-unstyled">
+                    <li class="mb-0 pt-5">
+                        <h3><b>Về chúng tôi</b></h3>
+                    </li>
+                    <li class="mb-0 pt-2">
+                        <h5>Công ty TNHH Thương mại Dịch vụ Trip4</h5>
+                    </li>
+                    <li class="mb-2 pt-2">
+                        <p>Địa chỉ: Số 1 Nguyễn Văn Cừ, Phường 3, Quận 5, Thành phố Hồ Chí Minh</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 pb-5">
+
+                <ul class="list-unstyled">
+                    <li class="mb-0 pt-5">
+                        <h3><b>Liên hệ</b></h3>
+                    </li>
+                    <li class="mb-0 pt-2">
+                        <h5>Hotline: 1900 123456</b></h5>
+                    </li>
+                    <li class="mb-2 pt-2">
+                        <p>7:00 - 21:00, Thứ 2 - Chủ nhật</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: white; color: #4f4550;">
+            © 2022 | Bản quyền thuộc về công ty Trip04
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

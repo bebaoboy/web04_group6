@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #444451;
+  height: 30px;
+  width: 42px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.seat-map-with-title{
+    border-style: solid;
+    background-color: #FFFBF5;
+}
+
+#seat-map{
+  margin-bottom: 20px;
+}
+
+.seat.selected {
+  background-color: #5CD6C0;
+}
+
+.seat.sold {
+  background-color: #605DEC;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p.text, div span.text{
+    font-size: large;
+}
+
+div span.amount, div span.list-seat{
+    font-size: large;
+    color: #605DEC;
+}
+
+p.text span{
+    color: #605DEC;
+}

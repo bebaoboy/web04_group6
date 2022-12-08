@@ -1,0 +1,221 @@
+.sort-vexe{
+    display: flex;
+    justify-content: center;
+}
+
+.list-trip{
+    width: 50%;
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .list-trip {
+        width: 100%;
+    }
+}
+
+.sort-vexe select{
+    margin: 0 6px;
+}
+
+.card {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    margin: 60px 0px;
+    /* margin: 60px 300px; */
+}
+
+.card-body {
+    padding: 57px 65px;
+}
+
+.select-limousine{
+    /* width: fit-content;
+    height: fit-content; */
+    border-radius: 16px;
+    border:1px solid rgba(0, 0, 0, 0.3);
+}
+
+.select-limousine .btn{
+    border-color:#605DEC;
+    border-radius: 12px;
+    background-color: #605DEC;
+}
+
+
+time{
+    font-size: x-large;
+}
+
+.card-content{
+    display: flex;
+}
+
+.card-content .cardIMG {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-content .cardIMG img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.car-information ul li{
+    background-color: #F1EDF2;
+    border-radius: 8px;
+    display: inline-flex;
+    width: max-content;
+}
+.car-information{
+    margin: 20px 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.card-action{
+    width: fit-content;
+    float: right;
+}
+
+.TicketPC__LocationRoute{
+    margin: 0 5px 10px 20px; 
+}
+
+.start{
+    color: red;
+}
+
+.end{
+    color: green;
+}
+
+.from-to-content .content-time{
+    margin: 0 5px 10px 10px; 
+}
+
+.from-to{
+    display: flex;
+}
+
+.from-to-content{
+    display: flex;
+}
+
+/* .place-from{
+    margin: 0 0 20px 0;
+} */
+
+.from-to-content .place-from{
+    padding: 0 10px px 10px;
+}
+
+.choose-trip-panel{
+    padding: 40px 20px;
+}
+
+.trip-select-detail{
+    width: 100%;
+    overflow: hidden;
+}
+
+.trip-select-detail .tab-pane {
+    width: 100%;
+    display: flex;
+}
+
+.booking{
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+}
+
+.tab-item.active span {
+    color: #605DEC;
+    text-decoration: none;
+    
+}
+
+.tab-item:link{
+    text-decoration: none;
+}
+
+.tab-item span{
+    color: black;
+    font-family: Nunito Sans, sans-serif;
+    font-size: large;
+    position: relative;
+    top: 5px;
+    left: 9px;
+}
+
+.tab-item{
+    display: inline;
+}
+
+.active{
+    color: #605DEC;
+}
+
+
+.tab-pane {
+    width: 100%;
+    /* display:table;
+    width: fit-content; */
+}
+
+/* .container-row{
+    display: flex;
+    align-items: center;
+}
+
+.container-row.state{
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+} */
+
+.tab-item{
+    float: left;
+    width: 100%;
+    color: #000;
+    font-family: Nunito Sans, sans-serif;
+}
+div{
+    display: block;
+}
+
+.w3-padding{padding:8px 100px!important}
+
+.bottombar{border-bottom:6px solid rgb(203, 203, 203)!important}
+
+.w3-container{padding:0.01em 16px}
+
+.w3-border-red,.w3-hover-border-red:hover{border-color:#5654d6!important; color: #605DEC}
+
+#Ratings .totalRating {
+    background-color: #605DEC;
+    color: white;
+    border-radius: 8px;
+}
+
+#Ratings .totalNum {
+    color:rgba(0, 0, 0, 0.7); 
+}
+
+#Ratings .review-item-container {
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 8px;
+}
+
+#Ratings .review-item-container .review-footer {
+    font-size: 12px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title> TRIP 04 </title>
+    <style>
+      .active-page{
+        color: #605DEC;
+      }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #F1EDF2;" > 
+      <a href="/" class="navbar-brand mx-5 py-3">
+          <div class="logo-image mx-5">
+              <img src="/img/Logo.png" class="img-fluid">
+          </div>
+      </a>
+      <div class="collapse navbar-collapse mx-5 ms-5">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a href="/" class="nav-link">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/Contact.html" class="nav-link">Liên Hệ</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/AboutUs.html" class="nav-link">Về Chúng Tôi</a>
+              </li>
+              <li class="nav-item">
+                  <a href="/Signin.html" class="nav-link active-page">Đăng Nhập</a>
+              </li>
+              <li class="nav-item">
+                  <a class="btn btn-primary btn-lg mx-auto su-but" href="/Signup.html" style="display: inline-block;font-weight: 400;line-height: 1.5;color: #fff;background-color: #605DEC;border-color: #605DEC;">
+                    Đăng Ký
+                  </a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <!--Sign in-->
+    <main>
+        <main class="wrapper-sign-up wrapper--w680">
+            <div class="card card-4">
+                <h2 class="title">Đăng nhập</h2>
+                <div class="card-body">
+                    <div class="format">
+                        <form method="POST">
+                            <div class="row row-space">
+                                <div class="input-group">
+                                    <input class="input-style" type="email" id="email" placeholder="Nhập email">
+                                </div>
+                                <div class="input-group">
+                                    <input class="input-style" type="password" id="password" placeholder="Nhập mật khẩu " required>
+                                </div>
+                                <div class="input-group">
+                                    <button class="input-style btn-style " type="button"><a href="#">Quên mật khẩu?</a></button>
+                                </div>
+                                <div class="input-group">
+                                  <a class="signup-button btn--radius-2 btn-primary-2 d-flex justify-content-center align-items-center text-decoration-none" 
+                                     type="submit" href="/personal_page/personal-page-userinfo.html">Đăng Nhập</a> 
+                                  <!-- <input class="signup-button btn--radius-2 btn-primary-2" type="submit" value="Đăng Nhập"> -->
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <!--Footer-->
+    <!-- Contact and About section-->
+    <footer class="footer bg text-center text-lg-start text-white" style="background-color: #F1EDF2;">
+        <!-- Grid container -->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 mx-auto p-lg-5">
+              <div class="d-flex align-items-center justify-content-center mx-auto" style="width: 150px; height: 150px;">
+                <a href="/"">
+                  <img src="/img/Logo.png" alt=""loading="lazy" />
+                </a>  
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-lg-4">
+  
+              <ul class="list-unstyled">
+                <li class="mb-0 pt-5">
+                  <h3><b>Về chúng tôi</b></h3>
+                </li>
+                <li class="mb-0 pt-2">
+                  <h5>Công ty TNHH Thương mại Dịch vụ Trip4</h5>
+                </li>
+                <li class="mb-2 pt-2">
+                  <p>Địa chỉ: Số 1 Nguyễn Văn Cừ, Phường 3, Quận 5, Thành phố Hồ Chí Minh</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 pb-5">
+  
+              <ul class="list-unstyled">
+                <li class="mb-0 pt-5">
+                  <h3><b>Liên hệ</b></h3>
+                </li>
+                <li class="mb-0 pt-2">
+                  <h5>Hotline: 1900 123456</b></h5>
+                </li>
+                <li class="mb-2 pt-2">
+                  <p>7:00 - 21:00, Thứ 2 - Chủ nhật</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: white; color: #4f4550;">
+          © 2022 | Bản quyền thuộc về công ty Trip04
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>

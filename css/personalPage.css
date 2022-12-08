@@ -1,0 +1,65 @@
+.outline{
+    display: inline-flex; 
+    padding: auto;  
+    margin-left: 30px; 
+}
+
+.option-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    border: 2px solid #605DEC;
+    border-radius: 16px;
+    /* width: fit-content; */
+    height: auto;
+    /* margin: 50px; */
+}
+
+.option-page .tab-item{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.tab-item.active span {
+    color: #605DEC;
+    text-decoration: none;
+    
+}
+
+.tab-item a:link{
+    text-decoration: none;
+}
+
+.tab-item span{
+    color: black;
+    font-family: Nunito Sans, sans-serif;
+    font-size: large;
+    position: relative;
+    top: 5px;
+    left: 9px;
+}
+
+.tab-item{
+    display: inline;
+}
+
+.active{
+    color: #605DEC;
+}
+
+img.icon{
+  position: relative;
+  top: 5px;
+  left: 5px;
+  color: black;
+}
+
+.userinfo-card,
+.changepass-card,
+.ticketHistory-card {
+    border: 2px solid #605DEC;
+    border-radius: 16px;
+}
+

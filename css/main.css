@@ -1,0 +1,158 @@
+/* Styling the nav bar here */
+
+.collapse {
+    font-size: 20px;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+.active-page{
+    color: #605DEC;
+}
+
+.row {
+    margin:20px;
+    justify-content: space-between;
+    padding-top: 50px;
+    color:black;
+}
+
+/* Styling the search bar */
+form .inner-form {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+form .inner-form {
+    display: flexbox;
+    justify-content: center;
+}
+form .inner-form .select-from,
+form .inner-form .select-to,
+form .inner-form .select-date {
+    height: 100%;
+    background: #fff;
+    border: 0;
+    display: block;
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #e5e5e5;
+}
+
+form .search-for-trip {
+    background: #605DEC;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    width: 10%;
+    color: white;
+}
+
+
+/*Styling the signup and signin page*/
+.card-body {
+    padding: 57px 65px;
+}
+
+.card {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+    width: 1200px;
+    height: fit-content;
+
+    padding: 20px;
+}
+
+.card-4 {
+    margin-top: 180px;
+    border-radius: 10px;
+}
+
+
+.wrapper--w680 {
+    max-width: 620px;
+}
+
+.input-style {
+    line-height: 30px;
+    background: #fafafa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #666;
+    margin: 5px;
+    width: 450px;
+    border-width: thin;
+    border-collapse: separate; 
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.btn-style {
+    border-width: 0ch;
+    margin-left: 67%;
+}
+
+.wrapper-sign-up{
+    display: flex;
+    width: 500px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+
+.signup-button{
+    width: 550px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 5px;
+    background-color: #605DEC;
+    border-color: #605DEC;
+    color: white;
+}
+
+.title {
+    color: grey;
+}
+
+.card-body h6 {
+    text-align: left;
+    color: grey;
+}
+
+footer {
+    position: relative;
+    margin-top: 180px;
+    clear: both;
+  }
+
+.logo {
+    padding: 20px;
+    padding-right: 0px;
+    margin-left: 100px;
+}
+
+.information {
+    font-weight: bold;
+}
+
+.format .row{
+    padding:0;
+}
+
+.input-style{
+    height:50px;
+}

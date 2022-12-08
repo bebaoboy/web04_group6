@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/personalPage.css">
+    <link rel="stylesheet" href="../css/ticketinfo.css">
+
+    <title> TRIP 04 </title>
+</head>
+
+<style>
+    /* .changepass-card {
+        width: fit-content;
+        height: fit-content;
+        margin: 50px;
+    } */
+
+    .row-space {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .row label {
+        font-family: Nunito Sans, sans-serif;
+    }
+</style>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #F1EDF2;" > 
+        <a href="/" class="navbar-brand mx-5 py-3">
+            <div class="logo-image mx-5">
+                <img src="/img/Logo.png" class="img-fluid">
+            </div>
+        </a>
+        <div class="collapse navbar-collapse mx-5 ms-5">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Contact.html" class="nav-link">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/AboutUs.html" class="nav-link">Về Chúng Tôi</a>
+                </li>
+                <li class="nav-item d-none">
+                    <a href="/Signin.html" class="nav-link">Đăng Nhập</a>
+                </li>
+                <li class="nav-item d-none">
+                    <a class="btn btn-primary btn-lg mx-auto su-but" href="/Signup.html" style="display: inline-block;font-weight: 400;line-height: 1.5;color: #fff;background-color: #605DEC;border-color: #605DEC;">
+                      Đăng Ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+    <main>
+        <div class="outline  row mt-5 p-0 d-flex justify-content-center">
+            <div class="option-page mb-3 mb-md-0 p-3 col-md-2 col-12">
+                <div class="tab-item">
+                    <img class="icon" src="../icon/user-small.png">
+                    <a href="personal-page-userinfo.html"><span>Thông tin cá nhân</span></a>
+                </div>
+                <div class="tab-item">
+                    <img class="icon" src="../icon/ticket-small.png">
+                    <a href="personal-page-userticket.html"><span>Vé của tôi</span></a>
+                </div>
+                <div class="tab-item active">
+                    <img class="icon" src="../icon/changepass-small.png">
+                    <a href="personal-page-changepass.html"><span>Đổi mật khẩu</span></a>
+                </div>
+                <div class="tab-item">
+                    <img class="icon" src="../icon/logout-small.png">
+                    <span>Đăng xuất</span>
+                </div>
+            </div>
+            <div class="changepass-card mx-3 p-0 col-md-6 col-12">
+                <form method="POST">
+                    <div class="row row-space p-0">
+                        <div class="mb-3">
+                          <label for="oldpass" class="form-label">Mật khẩu hiện tại</label>
+                          <input type="password" class="form-control" id="oldpass">
+                          <label for="newpass" class="form-label">Mật khẩu mới</label>
+                          <input type="password" class="form-control" id="newpass">
+                          <label for="confirmNewpass" class="form-label">Xác nhận mật khẩu mới</label>
+                          <input type="password" class="form-control" id="confirmNewpass">
+                        </div>
+                        <button type="submit" class="btn btn-primary  mx-auto mt-3" style="width: 500px; align-content: center; background-color:#605DEC; border-color:#605DEC;">Cập nhật thông tin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+    <br>
+    <br>
+    <br>
+
+
+    <!--Footer-->
+    <!-- Contact and About section-->
+    <footer class="footer bg text-center text-lg-start text-white" style="background-color: #F1EDF2;">
+        <!-- Grid container -->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 mx-auto p-lg-5">
+              <div class="d-flex align-items-center justify-content-center mx-auto" style="width: 150px; height: 150px;">
+                <a href="/"">
+                  <img src="/img/Logo.png" alt=""loading="lazy" />
+                </a>  
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-lg-4">
+  
+              <ul class="list-unstyled">
+                <li class="mb-0 pt-5">
+                  <h3><b>Về chúng tôi</b></h3>
+                </li>
+                <li class="mb-0 pt-2">
+                  <h5>Công ty TNHH Thương mại Dịch vụ Trip4</h5>
+                </li>
+                <li class="mb-2 pt-2">
+                  <p>Địa chỉ: Số 1 Nguyễn Văn Cừ, Phường 3, Quận 5, Thành phố Hồ Chí Minh</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-lg-4 pb-5">
+  
+              <ul class="list-unstyled">
+                <li class="mb-0 pt-5">
+                  <h3><b>Liên hệ</b></h3>
+                </li>
+                <li class="mb-0 pt-2">
+                  <h5>Hotline: 1900 123456</b></h5>
+                </li>
+                <li class="mb-2 pt-2">
+                  <p>7:00 - 21:00, Thứ 2 - Chủ nhật</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: white; color: #4f4550;">
+          © 2022 | Bản quyền thuộc về công ty Trip04
+        </div>
+        <!-- Copyright -->
+      </footer>
+</body>
+
+</html>
